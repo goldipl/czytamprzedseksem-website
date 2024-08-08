@@ -5,7 +5,7 @@ module.exports = {
   trailingSlash: true,
 
   // Specify asset prefix for correct path handling in the exported version
-  assetPrefix: './',
+  assetPrefix: '/',
 
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
