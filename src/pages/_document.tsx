@@ -16,9 +16,8 @@ class MyDocument extends Document {
     return (
       <Html lang="pl">
         <Head>
-          {/* <link rel="icon" href="./icons/favicon.ico" />
-          <link rel="apple-touch-icon" href="./icons/favicon.ico" /> */}
-          <title>Czytam przed seksem - Hubert Pajączkowski</title>
+          <link rel="icon" href="./icons/favicon.ico" />
+          <link rel="apple-touch-icon" href="./icons/favicon.ico" />
         </Head>
         <body>
           <Main />
