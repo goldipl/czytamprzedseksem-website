@@ -19,16 +19,16 @@ const Header = () => {
         <nav className="header-wrapper__nav">
           <ul>
             <li>
-              <Link href="">link</Link>
+              <Link href="">Warsztaty</Link>
             </li>
             <li>
-              <Link href="">link</Link>
+              <Link href="">Szkolenia</Link>
             </li>
             <li>
-              <Link href="">link</Link>
+              <Link href="">Konsultacje</Link>
             </li>
             <li>
-              <Link href="">link</Link>
+              <Link href="">Kontakt</Link>
             </li>
           </ul>
         </nav>
