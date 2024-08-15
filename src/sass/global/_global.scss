@@ -9,4 +9,14 @@ body {
 
 body {
   background-color: $main-bg-color01;
+  header,
+  main,
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }

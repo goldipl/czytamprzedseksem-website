@@ -1,0 +1,11 @@
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  h1 {
+    color: $color-white;
+    padding: 240px 0;
+  }
+}
