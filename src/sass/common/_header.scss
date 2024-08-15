@@ -1,83 +1,88 @@
-.header {
-  display: flex;
-  width: 100%;
-  &-wrapper {
+header {
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+  width: 100vw;
+  .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    margin: 0 auto;
-    &__logo {
-      a {
-        text-decoration: none;
-        img {
-          height: auto;
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      &__logo {
+        a {
+          text-decoration: none;
+          img {
+            height: auto;
+          }
         }
       }
-    }
-    &__nav {
-      ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        list-style: none;
+      &__nav {
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          list-style: none;
 
-        li {
-          position: relative;
-
-          a {
+          li {
             position: relative;
-            color: $text-primary-color01;
-            text-decoration: none;
-            padding: 8px 24px;
-            display: inline-block;
-            font-size: 18px;
-            transition: color 0.3s ease;
 
-            &:hover {
+            a {
+              position: relative;
+              color: $text-primary-color01;
               text-decoration: none;
-              color: darken($text-primary-color01, 20%);
+              padding: 8px 24px;
+              display: inline-block;
+              font-size: 18px;
+              transition: color 0.3s ease;
+
+              &:hover {
+                text-decoration: none;
+                color: darken($text-primary-color01, 20%);
+
+                &::before {
+                  animation: wave 1s ease-in-out forwards;
+                }
+              }
 
               &::before {
-                animation: wave 1s ease-in-out forwards;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $text-primary-color01;
+                bottom: 0;
+                left: 0;
+                transform-origin: 0 100%;
+                transform: scaleX(0);
               }
             }
 
-            &::before {
+            &:not(:last-child)::after {
               content: "";
               position: absolute;
-              width: 100%;
-              height: 2px;
+              right: -2px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 6px;
+              height: 6px;
               background-color: $text-primary-color01;
-              bottom: 0;
-              left: 0;
-              transform-origin: 0 100%;
-              transform: scaleX(0);
+              border-radius: 50%;
+              margin-left: 16px;
             }
           }
 
-          &:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            right: -2px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 6px;
-            height: 6px;
-            background-color: $text-primary-color01;
-            border-radius: 50%;
-            margin-left: 16px;
-          }
-        }
-
-        @keyframes wave {
-          0%,
-          100% {
-            transform: scaleX(0);
-          }
-          50% {
-            transform: scaleX(1);
+          @keyframes wave {
+            0%,
+            100% {
+              transform: scaleX(0);
+            }
+            50% {
+              transform: scaleX(1);
+            }
           }
         }
       }

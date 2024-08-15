@@ -9,9 +9,7 @@ body {
 
 body {
   background-color: $main-bg-color01;
-  header,
-  main,
-  footer {
+  main {
     display: flex;
     flex-direction: row;
     align-items: center;
