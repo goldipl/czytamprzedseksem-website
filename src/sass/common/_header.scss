@@ -24,12 +24,15 @@
         list-style: none;
 
         li {
+          position: relative;
+
           a {
+            position: relative;
             color: $text-primary-color01;
             text-decoration: none;
-            padding: 8px 16px;
+            padding: 8px 24px;
             display: inline-block;
-            position: relative;
+            font-size: 18px;
             transition: color 0.3s ease;
 
             &:hover {
@@ -52,6 +55,19 @@
               transform-origin: 0 100%;
               transform: scaleX(0);
             }
+          }
+
+          &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: -2px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background-color: $text-primary-color01;
+            border-radius: 50%;
+            margin-left: 16px;
           }
         }
 
