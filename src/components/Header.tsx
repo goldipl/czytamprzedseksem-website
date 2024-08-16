@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import logo from "./../../public/icons/logo.svg";
+import logo from "./../../public/icons/header/logo.svg";
+import menuDownIcon from "./../../public/icons/header/menu-down-icon.svg";
 
 const Header = () => {
   return (
@@ -18,8 +19,16 @@ const Header = () => {
         </div>
         <nav className="header-wrapper__nav">
           <ul>
-            <li>
-              <Link href="">Warsztaty</Link>
+            <li className="nav-expand">
+              <span>
+                Warsztaty{" "}
+                <img
+                  src={menuDownIcon.src}
+                  alt="strzałka"
+                  height={12}
+                  width={20}
+                />
+              </span>
             </li>
             <li>
               <Link href="">Szkolenia</Link>

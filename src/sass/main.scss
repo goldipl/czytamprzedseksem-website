@@ -4,6 +4,9 @@
 @import "./global/reset";
 @import "./global/global";
 
+// Mixins
+@import "./mixins/nav-link-mixin";
+
 // Common styles
 @import "./common/header";
 @import "./common/footer";
