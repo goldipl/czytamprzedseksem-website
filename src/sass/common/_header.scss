@@ -21,7 +21,11 @@ header {
         }
       }
       &__nav {
-        ul {
+        ul * {
+          user-select: none;
+        }
+
+        ul.nav-first-lvl {
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -32,10 +36,35 @@ header {
 
             &.nav-expand {
               span {
+                position: relative;
                 @include nav-link-mixin(8px 16px 8px 24px, 18px);
 
                 img {
-                  margin: 0 8px 0 4px;
+                  margin: 0 8px;
+                }
+                + .nav-second-lvl.active {
+                  display: flex;
+                }
+              }
+              .nav-second-lvl {
+                display: none;
+                list-style: none;
+                position: absolute;
+                left: 0;
+                top: 60px;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                background-color: $main-bg-color01;
+                padding: 8px 0;
+                li {
+                  &::after {
+                    display: none;
+                  }
+                  a {
+                    font-size: 16px;
+                    white-space: pre;
+                  }
                 }
               }
             }
