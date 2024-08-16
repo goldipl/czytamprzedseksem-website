@@ -4,7 +4,7 @@ import avatar from "./../../../public/img/avatar.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero" id="hero">
+    <section className="hero" id="hero">
       <video src={heroVideo} autoPlay muted loop className="hero-video">
         Your browser does not support the video tag.
       </video>
@@ -18,7 +18,7 @@ const Hero = () => {
           <p>| Edukator seksualny |</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
