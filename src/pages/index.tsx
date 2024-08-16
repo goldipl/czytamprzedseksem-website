@@ -1,8 +1,9 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import Header from "@/components/common/Header";
+import Hero from "@/components/sections/Hero";
 import React from "react";
 import "@/sass/main.scss";
-import Footer from "@/components/Footer";
+import Footer from "@/components/common/Footer";
+import Welcome from "@/components/sections/Welcome";
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
       </header>
       <main>
         <Hero />
+        <Welcome />
       </main>
       <footer>
         <Footer />

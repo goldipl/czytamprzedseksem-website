@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import logo from "./../../public/icons/header/logo.svg";
-import menuDownIcon from "./../../public/icons/header/menu-down-icon.svg";
+import logo from "./../../../public/icons/header/logo.svg";
+import menuDownIcon from "./../../../public/icons/header/menu-down-icon.svg";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);

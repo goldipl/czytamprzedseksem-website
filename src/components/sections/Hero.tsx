@@ -1,6 +1,6 @@
 import React from "react";
-import heroVideo from "./../../public/movie/background-movie.mp4";
-import avatar from "./../../public/img/avatar.jpg";
+import heroVideo from "./../../../public/movie/background-movie.mp4";
+import avatar from "./../../../public/img/avatar.jpg";
 
 const Hero = () => {
   return (
