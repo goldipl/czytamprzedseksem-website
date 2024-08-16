@@ -3,8 +3,8 @@ import React from "react";
 const Welcome = () => {
   return (
     <section id="welcome-section" className="welcome-section">
-      <div>
-        <p>Welcome section</p>
+      <div className="welcome-section-wrapper">
+        <p>Sekcja powitalna - testowy tekst</p>
       </div>
     </section>
   );
