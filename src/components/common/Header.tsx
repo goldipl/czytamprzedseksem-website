@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import logo from "./../../../public/icons/header/logo.svg";
 import menuDownIcon from "./../../../public/icons/header/menu-down-icon.svg";
+import Image from "next/image";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -15,7 +16,7 @@ const Header = () => {
       <div className="header-wrapper">
         <div className="header-wrapper__logo">
           <Link href="/">
-            <img
+            <Image
               src={logo.src}
               alt="Czytam przed seksem"
               height={90}
@@ -28,7 +29,7 @@ const Header = () => {
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("firstDropdown")}>
                 Warsztaty
-                <img
+                <Image
                   src={menuDownIcon.src}
                   alt="strzałka"
                   height={9}
@@ -51,7 +52,7 @@ const Header = () => {
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("secondDropdown")}>
                 Szkolenia
-                <img
+                <Image
                   src={menuDownIcon.src}
                   alt="strzałka"
                   height={9}

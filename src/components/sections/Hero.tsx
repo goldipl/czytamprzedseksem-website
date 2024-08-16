@@ -11,7 +11,6 @@ const Hero = () => {
       </video>
       <div className="hero-wrapper">
         <Image src={avatar} alt="avatar" className="hero-wrapper__avatar" />
-
         <div className="hero-wrapper__text">
           <h1>Czytam przed seksem</h1>
           <h3>
