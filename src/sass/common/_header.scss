@@ -1,14 +1,18 @@
 header {
+  position: relative;
   box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
   width: 100vw;
+  z-index: 1;
   .header {
     display: flex;
     width: 100%;
+    background-color: $main-bg-color01;
     &-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      background-color: $main-bg-color01;
       width: 100%;
       max-width: 1280px;
       margin: 0 auto;
