@@ -42,10 +42,10 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="">Szkoła podstawowa</Link>
+                  <Link href="#primaryschool-section">Szkoła podstawowa</Link>
                 </li>
                 <li>
-                  <Link href="">Szkoła średnia</Link>
+                  <Link href="#highschool-section">Szkoła średnia</Link>
                 </li>
               </ul>
             </li>
