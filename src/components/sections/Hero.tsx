@@ -16,9 +16,11 @@ const Hero = () => {
           <h3>
             <span>-</span> Hubert Pajączkowski <span>-</span>
           </h3>
-          <p>| Edukator seksualny | pozytywna seksualność |</p>
-          <p>| przemiany ról płciowych | różne modele związków | trendy |</p>
-          <p>| dzieciństwo i dojrzewanie |</p>
+          <div className="hero-desc">
+            <p>| Edukator seksualny | pozytywna seksualność |</p>
+            <p>| przemiany ról płciowych | różne modele związków | trendy |</p>
+            <p>| dzieciństwo i dojrzewanie |</p>
+          </div>
         </div>
       </div>
     </section>
