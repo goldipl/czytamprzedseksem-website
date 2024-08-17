@@ -13,7 +13,7 @@
       margin-bottom: 24px;
       text-transform: uppercase;
       text-align: center;
-      margin: 0 0 40px 0;
+      margin: 0 0 64px 0;
     }
     .golden-shape-aboutme01 {
       position: absolute;
@@ -27,20 +27,6 @@
       right: -160px;
       z-index: 0;
       transform: rotate(-90deg);
-    }
-    .img-text-wrapper {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      z-index: 1;
-      margin: 0 0 40px 0;
-      .img-box {
-        margin: 0 0 0 64px;
-        img {
-          object-fit: contain;
-        }
-      }
     }
   }
 }

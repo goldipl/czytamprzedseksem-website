@@ -70,10 +70,10 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link href="">Konsultacje</Link>
+              <Link href="#courses-section">Konsultacje</Link>
             </li>
             <li>
-              <Link href="">Kontakt</Link>
+              <Link href="#contact-section">Kontakt</Link>
             </li>
           </ul>
         </nav>

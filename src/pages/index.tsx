@@ -8,6 +8,7 @@ import AboutMe from "@/components/sections/AboutMe";
 import Workshops from "@/components/sections/Workshops";
 import PrimarySchoolWorkshops from "@/components/sections/PrimarySchoolWorkshops";
 import HighSchoolWorkshops from "@/components/sections/HighSchool";
+import Courses from "@/components/sections/Courses";
 
 const index = () => {
   return (
@@ -22,6 +23,7 @@ const index = () => {
         <Workshops />
         <PrimarySchoolWorkshops />
         <HighSchoolWorkshops />
+        <Courses />
       </main>
       <footer>
         <Footer />
