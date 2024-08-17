@@ -65,7 +65,9 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="">Z rodzicami i kadrą pedagogiczną</Link>
+                  <Link href="#courses-section">
+                    Z rodzicami i kadrą pedagogiczną
+                  </Link>
                 </li>
               </ul>
             </li>
