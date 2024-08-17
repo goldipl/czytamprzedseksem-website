@@ -7,6 +7,7 @@ import News from "@/components/sections/News";
 import AboutMe from "@/components/sections/AboutMe";
 import Workshops from "@/components/sections/Workshops";
 import PrimarySchoolWorkshops from "@/components/sections/PrimarySchoolWorkshops";
+import HighSchoolWorkshops from "@/components/sections/HighSchool";
 
 const index = () => {
   return (
@@ -20,6 +21,7 @@ const index = () => {
         <News />
         <Workshops />
         <PrimarySchoolWorkshops />
+        <HighSchoolWorkshops />
       </main>
       <footer>
         <Footer />

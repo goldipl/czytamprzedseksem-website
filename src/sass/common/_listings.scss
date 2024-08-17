@@ -13,6 +13,7 @@
     border: 1px solid $color-black02;
     width: calc(50% - 12px);
     border-radius: 16px;
+    background-color: $main-bg-color02;
     &:last-of-type {
       width: 100%;
     }
@@ -33,6 +34,19 @@
   &.light-version {
     .vert-box-slot {
       border: 1px solid $border-color02;
+      background-color: $main-bg-color01;
+      &:last-of-type {
+        width: calc(50% - 12px);
+      }
+      h4 {
+        color: $text-primary-color01;
+      }
+      p {
+        color: $text-primary-color02;
+        a {
+          color: $text-primary-color02;
+        }
+      }
     }
   }
 }
