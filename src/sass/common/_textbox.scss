@@ -1,5 +1,23 @@
 .text-box {
+  position: relative;
+  z-index: 1;
+  &.dark-text {
+    .text-box-slot {
+      h4 {
+        color: $text-secondary-color01;
+      }
+      p {
+        color: $text-secondary-color01;
+        a {
+          color: $text-secondary-color02;
+        }
+      }
+    }
+  }
   &-slot {
+    h4 {
+      color: $text-primary-color02;
+    }
     p {
       text-align: justify;
       color: $text-primary-color02;

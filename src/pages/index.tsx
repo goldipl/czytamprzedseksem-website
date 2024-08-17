@@ -6,6 +6,7 @@ import Footer from "@/components/common/Footer";
 import News from "@/components/sections/News";
 import AboutMe from "@/components/sections/AboutMe";
 import Workshops from "@/components/sections/Workshops";
+import PrimarySchoolWorkshops from "@/components/sections/PrimarySchoolWorkshops";
 
 const index = () => {
   return (
@@ -18,6 +19,7 @@ const index = () => {
         <AboutMe />
         <News />
         <Workshops />
+        <PrimarySchoolWorkshops />
       </main>
       <footer>
         <Footer />
