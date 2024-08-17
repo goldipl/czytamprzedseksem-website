@@ -50,7 +50,10 @@ const AboutMe = () => {
                 bezpieczeństwa w sieci i migracji. Prowadzę profil dla osób
                 dorosłych na instagramie:{" "}
                 <strong>
-                  <Link href="https://www.instagram.com/czytam_przedseksem/">
+                  <Link
+                    href="https://www.instagram.com/czytam_przedseksem/"
+                    target="_blank"
+                  >
                     @czytam_przedseksem
                   </Link>
                 </strong>
