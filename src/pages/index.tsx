@@ -9,6 +9,7 @@ import Workshops from "@/components/sections/Workshops";
 import PrimarySchoolWorkshops from "@/components/sections/PrimarySchoolWorkshops";
 import HighSchoolWorkshops from "@/components/sections/HighSchool";
 import Courses from "@/components/sections/Courses";
+import Cooperation from "@/components/sections/Cooperation";
 
 const index = () => {
   return (
@@ -24,6 +25,7 @@ const index = () => {
         <PrimarySchoolWorkshops />
         <HighSchoolWorkshops />
         <Courses />
+        <Cooperation />
       </main>
       <footer>
         <Footer />

@@ -50,3 +50,34 @@
     }
   }
 }
+
+.imglinks-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 40px 0;
+  &-slot {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 24px -8px $border-color02;
+    transition: all 0.3s;
+    height: 300px;
+    &:hover {
+      box-shadow: 0 0 18px 4px $border-color02;
+      img {
+        scale: 1.06;
+      }
+    }
+    a {
+      img {
+        transition: all 0.6s;
+        border-radius: 16px;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
