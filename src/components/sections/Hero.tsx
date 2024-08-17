@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import heroVideo from "./../../../public/movie/background-movie.mp4";
 import avatar from "./../../../public/img/avatar.svg";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -21,6 +22,11 @@ const Hero = () => {
             <p>| przemiany ról płciowych | różne modele związków | trendy |</p>
             <p>| dzieciństwo i dojrzewanie |</p>
           </div>
+          <Link href="#welcome-section" className="button01">
+            Czytaj więcej
+            <div className="button01__horizontal"></div>
+            <div className="button01__vertical"></div>
+          </Link>
         </div>
       </div>
     </section>
