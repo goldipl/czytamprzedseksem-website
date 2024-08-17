@@ -14,7 +14,7 @@
   }
   .hero-wrapper {
     position: absolute;
-    top: 25%;
+    top: 15%;
     right: calc(((100vw - 1280px) + 160px) / 2);
     display: flex;
     flex-direction: row;
@@ -26,8 +26,6 @@
       display: flex;
       flex-direction: column;
       order: 1;
-      border-radius: 100%;
-      box-shadow: 0 0 26px -8px $text-primary-color01;
     }
     &__text {
       display: flex;
@@ -64,7 +62,7 @@
         }
       }
       p {
-        font-size: 16px;
+        font-size: 13px;
         text-transform: uppercase;
         margin: 16px 0 0 0;
       }
