@@ -1,0 +1,63 @@
+.aboutme-section {
+  background-color: $main-bg-color01;
+  height: 600px;
+  padding: 80px 0;
+  &-wrapper {
+    position: relative;
+    max-width: calc(1280px - 160px);
+    width: 100%;
+    margin: 0 auto;
+    h2 {
+      color: $text-primary-color01;
+      font-size: 40px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 40px 0;
+    }
+    .golden-shape01 {
+      position: absolute;
+      bottom: -147px;
+      left: -320px;
+      z-index: 0;
+    }
+    .golden-shape02 {
+      position: absolute;
+      top: -218px;
+      right: -160px;
+      z-index: 0;
+      transform: rotate(-90deg);
+    }
+    .img-text-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      z-index: 1;
+      .text-box {
+        &-slot {
+          p {
+            text-align: justify;
+            color: $text-primary-color02;
+            margin: 0 0 16px 0;
+            strong {
+              font-weight: 600;
+            }
+            a {
+              color: $text-primary-color03;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      .img-box {
+        margin: 0 0 0 64px;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

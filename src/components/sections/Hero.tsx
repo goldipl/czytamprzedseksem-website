@@ -22,8 +22,8 @@ const Hero = () => {
             <p>| przemiany ról płciowych | różne modele związków | trendy |</p>
             <p>| dzieciństwo i dojrzewanie |</p>
           </div>
-          <Link href="#welcome-section" className="button01">
-            Czytaj więcej
+          <Link href="#news-section" className="button01">
+            Czytaj najnowsze treści
             <div className="button01__horizontal"></div>
             <div className="button01__vertical"></div>
           </Link>
