@@ -7,14 +7,14 @@
   text-align: center;
   z-index: 0;
   .hero-video {
-    height: 760px;
+    height: 640px;
     width: 100vw;
     object-fit: cover;
     filter: contrast(1.2);
   }
   .hero-wrapper {
     position: absolute;
-    top: 15%;
+    top: 56px;
     right: calc(((100vw - 1280px) + 160px) / 2);
     display: flex;
     flex-direction: row;
