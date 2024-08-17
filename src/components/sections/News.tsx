@@ -12,7 +12,10 @@ const News = () => {
         <h2>Aktualności</h2>
         <div className="news-box">
           <div className="news-box-slot">
-            <Link href="https://www.youtube.com/watch?v=NahyRycwWE4">
+            <Link
+              href="https://www.youtube.com/watch?v=NahyRycwWE4"
+              target="_blank"
+            >
               <Image
                 src={newsImg01.src}
                 width={600}
@@ -28,7 +31,10 @@ const News = () => {
             </Link>
           </div>
           <div className="news-box-slot">
-            <Link href="https://magazynpismo.pl/idee/strategie-przetrwania/love-hate-relationship-z-tinderem/">
+            <Link
+              href="https://magazynpismo.pl/idee/strategie-przetrwania/love-hate-relationship-z-tinderem/"
+              target="_blank"
+            >
               <Image
                 src={newsImg02.src}
                 width={600}
@@ -41,7 +47,10 @@ const News = () => {
             </Link>
           </div>
           <div className="news-box-slot">
-            <Link href="https://radioram.pl/articles/view/53601/Mamy-Czas-Kartkowka-z-WDZ">
+            <Link
+              href="https://radioram.pl/articles/view/53601/Mamy-Czas-Kartkowka-z-WDZ"
+              target="_blank"
+            >
               <Image
                 src={newsImg03.src}
                 width={600}
