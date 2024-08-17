@@ -2,26 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import AboutMeImg from "./../../../public/img/o_mnie.jpg";
-import GoldShape01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
-import GoldShape02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
+import GoldShapeAboutMe01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
+import GoldShapeAboutMe02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 
 const AboutMe = () => {
   return (
     <section id="aboutme-section" className="aboutme-section">
       <div className="aboutme-section-wrapper">
         <Image
-          className="golden-shape01"
-          src={GoldShape01.src}
+          className="golden-shape-aboutme01"
+          src={GoldShapeAboutMe01.src}
           width={224}
           height={300}
-          alt="Brązowy kształt"
+          alt="Złoty kształt"
         />
         <Image
-          className="golden-shape02"
-          src={GoldShape02.src}
+          className="golden-shape-aboutme02"
+          src={GoldShapeAboutMe02.src}
           width={124}
           height={400}
-          alt="Brązowy kształt"
+          alt="Złoty kształt"
         />
         <h2>O mnie</h2>
         <div className="img-text-wrapper">

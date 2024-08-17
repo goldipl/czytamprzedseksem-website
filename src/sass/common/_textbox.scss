@@ -1,0 +1,18 @@
+.text-box {
+  &-slot {
+    p {
+      text-align: justify;
+      color: $text-primary-color02;
+      margin: 0 0 16px 0;
+      strong {
+        font-weight: 600;
+      }
+      a {
+        color: $text-primary-color03;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

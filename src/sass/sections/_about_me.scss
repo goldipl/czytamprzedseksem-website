@@ -15,13 +15,13 @@
       text-align: center;
       margin: 0 0 40px 0;
     }
-    .golden-shape01 {
+    .golden-shape-aboutme01 {
       position: absolute;
       bottom: -140px;
       left: -320px;
       z-index: 0;
     }
-    .golden-shape02 {
+    .golden-shape-aboutme02 {
       position: absolute;
       top: -238px;
       right: -160px;
@@ -35,24 +35,6 @@
       align-items: center;
       z-index: 1;
       margin: 0 0 40px 0;
-      .text-box {
-        &-slot {
-          p {
-            text-align: justify;
-            color: $text-primary-color02;
-            margin: 0 0 16px 0;
-            strong {
-              font-weight: 600;
-            }
-            a {
-              color: $text-primary-color03;
-              &:hover {
-                text-decoration: none;
-              }
-            }
-          }
-        }
-      }
       .img-box {
         margin: 0 0 0 64px;
         img {
