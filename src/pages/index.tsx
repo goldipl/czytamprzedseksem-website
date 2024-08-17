@@ -5,6 +5,7 @@ import "@/sass/main.scss";
 import Footer from "@/components/common/Footer";
 import News from "@/components/sections/News";
 import AboutMe from "@/components/sections/AboutMe";
+import Workshops from "@/components/sections/Workshops";
 
 const index = () => {
   return (
@@ -16,6 +17,7 @@ const index = () => {
         <Hero />
         <AboutMe />
         <News />
+        <Workshops />
       </main>
       <footer>
         <Footer />

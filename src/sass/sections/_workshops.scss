@@ -1,0 +1,19 @@
+.workshops-section {
+  background-color: $main-bg-color01;
+  height: auto;
+  padding: 100px 0;
+  &-wrapper {
+    position: relative;
+    max-width: calc(1280px - 160px);
+    width: 100%;
+    margin: 0 auto;
+    h2 {
+      color: $text-primary-color01;
+      font-size: 40px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 40px 0;
+    }
+  }
+}
