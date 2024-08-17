@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import heroVideo from "./../../../public/movie/background-movie.mp4";
-import avatar from "./../../../public/img/avatar.jpg";
+import avatar from "./../../../public/img/avatar.svg";
 
 const Hero = () => {
   return (
