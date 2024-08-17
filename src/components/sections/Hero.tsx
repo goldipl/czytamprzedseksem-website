@@ -23,7 +23,7 @@ const Hero = () => {
             <p>| dzieciństwo i dojrzewanie |</p>
           </div>
           <Link href="#news-section" className="button01">
-            Czytaj najnowsze treści
+            Sprawdź najnowsze treści
             <div className="button01__horizontal"></div>
             <div className="button01__vertical"></div>
           </Link>
