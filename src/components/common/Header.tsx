@@ -11,6 +11,10 @@ const Header = () => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
   };
 
+  const handleCloseDropdown = () => {
+    setActiveDropdown(null);
+  };
+
   return (
     <div className="header">
       <div className="header-wrapper">
@@ -42,10 +46,20 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="#primaryschool-section">Szkoła podstawowa</Link>
+                  <Link
+                    href="#primaryschool-section"
+                    onClick={handleCloseDropdown}
+                  >
+                    Szkoła podstawowa
+                  </Link>
                 </li>
                 <li>
-                  <Link href="#highschool-section">Szkoła średnia</Link>
+                  <Link
+                    href="#highschool-section"
+                    onClick={handleCloseDropdown}
+                  >
+                    Szkoła średnia
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -65,17 +79,21 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="#courses-section">
+                  <Link href="#courses-section" onClick={handleCloseDropdown}>
                     Z rodzicami i kadrą pedagogiczną
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="#courses-section">Konsultacje</Link>
+              <Link href="#courses-section" onClick={handleCloseDropdown}>
+                Konsultacje
+              </Link>
             </li>
             <li>
-              <Link href="#contact-section">Kontakt</Link>
+              <Link href="#contact-section" onClick={handleCloseDropdown}>
+                Kontakt
+              </Link>
             </li>
           </ul>
         </nav>
