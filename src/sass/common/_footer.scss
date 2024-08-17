@@ -1,16 +1,16 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  background-color: $main-bg-color01;
+  height: auto;
+  padding: 24px 0;
   &-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    max-width: calc(1280px - 160px);
     width: 100%;
-    text-align: center;
+    margin: 0 auto;
     p {
-      color: $color-white;
+      color: $text-primary-color01;
+      font-size: 16px;
+      text-align: center;
     }
   }
 }
