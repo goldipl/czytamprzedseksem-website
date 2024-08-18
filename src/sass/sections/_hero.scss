@@ -76,3 +76,43 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  #hero {
+    .hero-video {
+      width: 100%;
+    }
+    .hero-wrapper {
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      justify-content: center;
+      max-width: unset;
+      &__avatar {
+        width: 45vw;
+        height: auto;
+        margin: 24px 0;
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        margin: 0 16px;
+        h1 {
+          font-size: 36px;
+          line-height: 48px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        .hero-desc {
+          > p {
+            font-size: 12px;
+          }
+        }
+        .button01 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
