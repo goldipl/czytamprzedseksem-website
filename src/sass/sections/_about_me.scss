@@ -35,6 +35,7 @@
     padding: 64px 0;
     &-wrapper {
       max-width: unset;
+      width: calc(100% - 32px);
       margin: 0 16px;
       h2 {
         font-size: 32px;
