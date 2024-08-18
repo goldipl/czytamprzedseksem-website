@@ -79,8 +79,11 @@
 
 @media (max-width: 960px) {
   #hero {
+    height: 100%;
     .hero-video {
       width: 100%;
+      height: 68dvh;
+      min-height: 560px;
     }
     .hero-wrapper {
       top: 0;
@@ -88,6 +91,7 @@
       flex-direction: column;
       justify-content: center;
       max-width: unset;
+      height: 100%;
       &__avatar {
         width: 45vw;
         height: auto;
@@ -99,7 +103,7 @@
         margin: 0 16px;
         h1 {
           font-size: 36px;
-          line-height: 48px;
+          line-height: 44px;
         }
         h3 {
           font-size: 20px;

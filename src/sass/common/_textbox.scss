@@ -54,3 +54,30 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .img-text-wrapper {
+    flex-direction: column;
+    margin: 0 0 32px 0;
+    width: calc(100% - 32px);
+    .text-box {
+      &-slot {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    &.reversed {
+      .img-box {
+        margin: 32px 0 0 0;
+      }
+    }
+    .img-box {
+      margin: 32px 0 0 0;
+      img {
+        width: 40vw;
+        height: auto;
+      }
+    }
+  }
+}
