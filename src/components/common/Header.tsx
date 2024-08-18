@@ -12,8 +12,20 @@ const Header = () => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
   };
 
+  const addBlockedWindow = () => {
+    document.body.classList.add("blocked-body");
+    document.getElementsByTagName("html")[0].classList.add("blocked-body");
+  };
+
+  const removeBlockedWindow = () => {
+    document.body.classList.remove("blocked-body");
+    document.getElementsByTagName("html")[0].classList.remove("blocked-body");
+  };
+
   const handleCloseDropdown = () => {
     setActiveDropdown(null);
+    removeBlockedWindow();
+    setOpenHamburger(false);
   };
 
   const handleHamburgerMenu = () => {
@@ -22,11 +34,9 @@ const Header = () => {
 
   useEffect(() => {
     if (openHamburger) {
-      document.body.classList.add("blocked-body");
-      document.getElementsByTagName("html")[0].classList.add("blocked-body");
+      addBlockedWindow();
     } else {
-      document.body.classList.remove("blocked-body");
-      document.getElementsByTagName("html")[0].classList.remove("blocked-body");
+      removeBlockedWindow();
     }
   }, [openHamburger]);
 
