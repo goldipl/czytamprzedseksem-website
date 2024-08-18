@@ -1,11 +1,12 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "./../../../public/icons/header/logo.svg";
 import menuDownIcon from "./../../../public/icons/header/menu-down-icon.svg";
 import Image from "next/image";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [openHamburger, setOpenHamburger] = useState(false);
 
   const handleDropdownToggle = (dropdown: any) => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
@@ -14,6 +15,20 @@ const Header = () => {
   const handleCloseDropdown = () => {
     setActiveDropdown(null);
   };
+
+  const handleHamburgerMenu = () => {
+    setOpenHamburger((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (openHamburger) {
+      document.body.classList.add("blocked-body");
+      document.getElementsByTagName("html")[0].classList.add("blocked-body");
+    } else {
+      document.body.classList.remove("blocked-body");
+      document.getElementsByTagName("html")[0].classList.remove("blocked-body");
+    }
+  }, [openHamburger]);
 
   return (
     <div className="header">
@@ -28,7 +43,18 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav className="header-wrapper__nav">
+        <div
+          className={`hamburger ${openHamburger ? "open" : ""}`}
+          onClick={handleHamburgerMenu}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </div>
+        <nav className={`header-wrapper__nav ${openHamburger ? "open" : ""}`}>
           <ul className="nav-first-lvl">
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("firstDropdown")}>
