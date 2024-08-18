@@ -6,6 +6,9 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  &.blocked-body {
+    overflow: hidden;
+  }
 }
 
 body {
