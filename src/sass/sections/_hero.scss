@@ -77,6 +77,17 @@
   }
 }
 
+@media (max-width: 1200px) {
+  #hero {
+    .hero-wrapper {
+      right: 32px;
+      &__avatar {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
 @media (max-width: 960px) {
   #hero {
     height: 100%;
@@ -88,6 +99,7 @@
     .hero-wrapper {
       top: 0;
       left: 0;
+      right: unset;
       flex-direction: column;
       justify-content: center;
       max-width: unset;
