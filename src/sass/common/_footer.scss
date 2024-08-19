@@ -33,3 +33,19 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .footer {
+    padding: 16px 0;
+    &-wrapper {
+      max-width: unset;
+      width: calc(100% - 64px);
+      p {
+        font-size: 14px;
+      }
+      span {
+        margin: 8px auto;
+      }
+    }
+  }
+}

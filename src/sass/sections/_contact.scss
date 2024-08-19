@@ -50,3 +50,32 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .contact-section {
+    padding: 64px 0;
+    &-wrapper {
+      max-width: unset;
+      width: calc(100% - 32px);
+      margin: 0 16px;
+      h2 {
+        font-size: 28px;
+        margin: 0 0 40px 0;
+      }
+      .social-links {
+        &-slot {
+          > a {
+            img {
+              width: 36px;
+              height: auto;
+              margin: 0 8px 0 0;
+            }
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
