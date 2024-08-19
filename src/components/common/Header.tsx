@@ -74,6 +74,9 @@ const Header = () => {
                   alt="strzałka"
                   height={9}
                   width={16}
+                  className={`arrow-img ${
+                    activeDropdown === "firstDropdown" ? "rotate" : ""
+                  }`}
                 />
               </span>
               <ul
@@ -107,6 +110,9 @@ const Header = () => {
                   alt="strzałka"
                   height={9}
                   width={16}
+                  className={`arrow-img ${
+                    activeDropdown === "secondDropdown" ? "rotate" : ""
+                  }`}
                 />
               </span>
               <ul
