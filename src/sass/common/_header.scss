@@ -192,13 +192,13 @@ header {
                   li {
                     padding: 0;
                     a {
-                      font-size: 14px;
+                      font-size: 15px;
                       padding: 8px 0 8px 48px;
                       &::before {
                         content: "";
                         position: absolute;
                         left: 16px;
-                        top: 14px;
+                        top: 16px;
                         transform: translateY(50%);
                         width: 5px;
                         height: 5px;
