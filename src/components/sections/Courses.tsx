@@ -11,6 +11,7 @@ const Courses = () => {
         <h2>SPOTKANIA Z RODZICAMI I KADRĄ PEDAGOGICZNĄ</h2>
         <Image
           className="brown-shape-courses01"
+          loading="lazy"
           src={GoldenShapeCourses01.src}
           width={173}
           height={500}
@@ -32,6 +33,7 @@ const Courses = () => {
           <div className="img-box">
             <Image
               src={HubertImg03.src}
+              loading="lazy"
               alt="O mnie"
               width={360}
               height={240}
@@ -44,6 +46,7 @@ const Courses = () => {
           <div className="img-box">
             <Image
               src={HubertImg01.src}
+              loading="lazy"
               alt="O mnie"
               width={360}
               height={240}

@@ -13,6 +13,7 @@ const Cooperation = () => {
       <div className="cooperation-section-wrapper">
         <Image
           className="golden-shape-cooperation01"
+          loading="lazy"
           src={GoldShapeCooperation01.src}
           width={224}
           height={300}
@@ -20,6 +21,7 @@ const Cooperation = () => {
         />
         <Image
           className="golden-shape-cooperation02"
+          loading="lazy"
           src={GoldShapeCooperation02.src}
           width={124}
           height={400}
@@ -29,13 +31,20 @@ const Cooperation = () => {
         <div className="imglinks-box">
           <div className="imglinks-box-slot">
             <Link href="https://sexed.pl/" target="_blank">
-              <Image src={sexedImg.src} width={300} height={300} alt="sexed" />
+              <Image
+                src={sexedImg.src}
+                loading="lazy"
+                width={300}
+                height={300}
+                alt="sexed"
+              />
             </Link>
           </div>
           <div className="imglinks-box-slot">
             <Link href="https://www.czesccialo.pl/" target="_blank">
               <Image
                 src={czescCialoImg.src}
+                loading="lazy"
                 width={300}
                 height={300}
                 alt="sexed"
@@ -44,7 +53,13 @@ const Cooperation = () => {
           </div>
           <div className="imglinks-box-slot">
             <Link href="https://alefundacja.pl/" target="_blank">
-              <Image src={aleImg.src} width={300} height={300} alt="sexed" />
+              <Image
+                src={aleImg.src}
+                loading="lazy"
+                width={300}
+                height={300}
+                alt="sexed"
+              />
             </Link>
           </div>
         </div>

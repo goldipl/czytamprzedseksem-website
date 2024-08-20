@@ -19,6 +19,7 @@ const Contact = () => {
               <Image
                 className="social-links-slot__icon"
                 src={mailImg.src}
+                loading="lazy"
                 alt="e-mail"
                 width={64}
                 height={64}
@@ -37,6 +38,7 @@ const Contact = () => {
               <Image
                 className="social-links-slot__icon"
                 src={instagramImg.src}
+                loading="lazy"
                 alt="instagram"
                 width={64}
                 height={64}

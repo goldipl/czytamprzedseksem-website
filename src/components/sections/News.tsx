@@ -15,6 +15,7 @@ const News = () => {
         <Image
           className="brown-shape-news01"
           src={BrownShapeNews01.src}
+          loading="lazy"
           width={173}
           height={500}
           alt="Brązowy kształt"
@@ -22,6 +23,7 @@ const News = () => {
         <Image
           className="brown-shape-news02"
           src={BrownShapeNews02.src}
+          loading="lazy"
           width={524}
           height={484}
           alt="Brązowy kształt"
@@ -34,6 +36,7 @@ const News = () => {
             >
               <Image
                 src={newsImg01.src}
+                loading="lazy"
                 width={600}
                 height={315}
                 alt="Fake kNOw more: Jak emocje wpływają na podatność na dezinformację?"
@@ -53,6 +56,7 @@ const News = () => {
             >
               <Image
                 src={newsImg02.src}
+                loading="lazy"
                 width={600}
                 height={315}
                 alt="Love-hate relationship z Tinderem"
@@ -69,6 +73,7 @@ const News = () => {
             >
               <Image
                 src={newsImg03.src}
+                loading="lazy"
                 width={600}
                 height={315}
                 alt="Mamy Czas: Kartkówka z WDŻ"

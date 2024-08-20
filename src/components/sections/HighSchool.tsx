@@ -10,6 +10,7 @@ const HighSchoolWorkshops = () => {
         <Image
           className="golden-shape-highschool01"
           src={GoldShapeHighSchoolWorkshop01.src}
+          loading="lazy"
           width={224}
           height={300}
           alt="Złoty kształt"
@@ -17,6 +18,7 @@ const HighSchoolWorkshops = () => {
         <Image
           className="golden-shape-highschool02"
           src={GoldShapeHighSchoolWorkshop01.src}
+          loading="lazy"
           width={224}
           height={300}
           alt="Złoty kształt"

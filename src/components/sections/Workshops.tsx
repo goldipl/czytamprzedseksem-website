@@ -11,6 +11,7 @@ const Workshops = () => {
         <Image
           className="golden-shape-workshops01"
           src={GoldShapeWorkshop01.src}
+          loading="lazy"
           width={224}
           height={300}
           alt="Złoty kształt"
@@ -18,6 +19,7 @@ const Workshops = () => {
         <Image
           className="golden-shape-workshops02"
           src={GoldShapeWorkshop02.src}
+          loading="lazy"
           width={124}
           height={400}
           alt="Złoty kształt"
