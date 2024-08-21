@@ -4,7 +4,7 @@ import BrownShapePrimarySchoolWorkshop01 from "./../../../public/shapes/brown-on
 
 const PrimarySchoolWorkshops = () => {
   return (
-    <section id="primaryschool-section" className="primaryschool-section">
+    <section id="dla-szkol-podstawowych" className="primaryschool-section">
       <div className="primaryschool-section-wrapper">
         <h2>Dla szkół podstawowych</h2>
         <Image

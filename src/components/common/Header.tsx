@@ -86,7 +86,7 @@ const Header = () => {
               >
                 <li>
                   <Link
-                    href="#primaryschool-section"
+                    href="#dla-szkol-podstawowych"
                     onClick={handleCloseDropdown}
                   >
                     Szkoła podstawowa
@@ -94,7 +94,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="#highschool-section"
+                    href="#dla-szkol-srednich"
                     onClick={handleCloseDropdown}
                   >
                     Szkoła średnia
@@ -121,19 +121,25 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="#courses-section" onClick={handleCloseDropdown}>
+                  <Link
+                    href="#spotkania-z-rodzicami-i-kadra-pedagogiczna"
+                    onClick={handleCloseDropdown}
+                  >
                     Z rodzicami i kadrą pedagogiczną
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="#courses-section" onClick={handleCloseDropdown}>
+              <Link
+                href="#spotkania-z-rodzicami-i-kadra-pedagogiczna"
+                onClick={handleCloseDropdown}
+              >
                 Konsultacje
               </Link>
             </li>
             <li>
-              <Link href="#contact-section" onClick={handleCloseDropdown}>
+              <Link href="#skontaktuj-sie-ze-mna" onClick={handleCloseDropdown}>
                 Kontakt
               </Link>
             </li>

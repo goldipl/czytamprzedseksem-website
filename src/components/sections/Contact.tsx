@@ -6,7 +6,7 @@ import instagramImg from "./../../../public/img/contact/instagram.jpg";
 
 const Contact = () => {
   return (
-    <section id="contact-section" className="contact-section">
+    <section id="skontaktuj-sie-ze-mna" className="contact-section">
       <div className="contact-section-wrapper">
         <h2>Skontaktuj się ze mną</h2>
         <div className="social-links">

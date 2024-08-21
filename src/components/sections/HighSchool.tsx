@@ -4,7 +4,7 @@ import GoldShapeHighSchoolWorkshop01 from "./../../../public/shapes/gold-on-brow
 
 const HighSchoolWorkshops = () => {
   return (
-    <section id="highschool-section" className="highschool-section">
+    <section id="dla-szkol-srednich" className="highschool-section">
       <div className="highschool-section-wrapper">
         <h2>Dla szkół średnich</h2>
         <Image

@@ -6,7 +6,10 @@ import HubertImg01 from "./../../../public/img/hubert/hubert01.jpg";
 
 const Courses = () => {
   return (
-    <section id="courses-section" className="courses-section">
+    <section
+      id="spotkania-z-rodzicami-i-kadra-pedagogiczna"
+      className="courses-section"
+    >
       <div className="courses-section-wrapper">
         <h2>SPOTKANIA Z RODZICAMI I KADRĄ PEDAGOGICZNĄ</h2>
         <Image
