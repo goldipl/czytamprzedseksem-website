@@ -38,7 +38,7 @@ const Courses = () => {
               loading="lazy"
               alt="O mnie"
               width={360}
-              height={360}
+              height={460}
             />
           </div>
         </div>
