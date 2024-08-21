@@ -44,7 +44,7 @@ const Courses = () => {
           </div>
         </div>
 
-        <h2>KONSULTACJE INDYWIDUALNE</h2>
+        <h2 id="konsultacje">KONSULTACJE INDYWIDUALNE</h2>
         <div className="img-text-wrapper reversed">
           <div className="img-box">
             <Image

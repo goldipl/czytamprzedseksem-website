@@ -131,10 +131,7 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link
-                href="#spotkania-z-rodzicami-i-kadra-pedagogiczna"
-                onClick={handleCloseDropdown}
-              >
+              <Link href="#konsultacje" onClick={handleCloseDropdown}>
                 Konsultacje
               </Link>
             </li>
