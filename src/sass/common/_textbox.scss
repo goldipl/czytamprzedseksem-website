@@ -50,7 +50,10 @@
   .img-box {
     margin: 0 0 0 64px;
     img {
-      object-fit: contain;
+      object-fit: cover;
+      border-radius: 16px;
+      width: 210px;
+      height: auto;
     }
   }
 }

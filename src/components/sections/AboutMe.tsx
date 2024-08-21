@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import AboutMeImg from "./../../../public/img/o_mnie.jpg";
+import AboutMeImg from "./../../../public/img/photos/photos01.jpg";
 import GoldShapeAboutMe01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
 import GoldShapeAboutMe02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 
