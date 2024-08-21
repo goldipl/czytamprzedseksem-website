@@ -20,7 +20,9 @@ header {
         a {
           text-decoration: none;
           img {
+            width: 340px;
             height: auto;
+            margin-top: 6px;
           }
         }
       }
@@ -126,7 +128,7 @@ header {
           a {
             img {
               margin: 4px 0 0 8px;
-              width: 220px;
+              width: 260px;
             }
           }
         }
@@ -210,6 +212,22 @@ header {
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    .header {
+      &-wrapper {
+        &__logo {
+          a {
+            img {
+              width: 220px;
             }
           }
         }
