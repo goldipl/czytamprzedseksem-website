@@ -17,17 +17,28 @@
     }
     .golden-shape-workshops01 {
       position: absolute;
-      bottom: -154px;
+      bottom: -138px;
       right: -320px;
       z-index: 0;
       transform: rotate(270deg);
     }
     .golden-shape-workshops02 {
       position: absolute;
-      bottom: -254px;
+      bottom: -238px;
       left: -300px;
       z-index: 0;
       transform: rotate(90deg);
+    }
+    .workshop-bottom {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 32px 0 0 0;
+      &-img {
+        border-radius: 16px;
+      }
     }
   }
 }

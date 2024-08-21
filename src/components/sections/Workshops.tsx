@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import GoldShapeWorkshop01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
 import GoldShapeWorkshop02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
+import HubertImg03 from "./../../../public/img/hubert/hubert03.jpg";
 
 const Workshops = () => {
   return (
@@ -66,6 +67,16 @@ const Workshops = () => {
                 integracyjnym.
               </p>
             </div>
+          </div>
+          <div className="workshop-bottom">
+            <Image
+              className="workshop-bottom-img"
+              loading="lazy"
+              src={HubertImg03.src}
+              width={480}
+              height={320}
+              alt="Hubert Pajączkowski"
+            />
           </div>
         </div>
       </div>

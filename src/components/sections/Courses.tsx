@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import GoldenShapeCourses01 from "./../../../public/shapes/brown-on-gold-shape01.jpg";
-import HubertImg03 from "./../../../public/img/hubert/hubert03.jpg";
 import HubertImg01 from "./../../../public/img/hubert/hubert01.jpg";
 
 const Courses = () => {
@@ -20,7 +19,7 @@ const Courses = () => {
           height={500}
           alt="Brązowy kształt"
         />
-        <div className="img-text-wrapper">
+        <div className="img-text-wrapper-ver02">
           <div className="text-box dark-text">
             <div className="text-box-slot">
               <p>
@@ -35,33 +34,22 @@ const Courses = () => {
           </div>
           <div className="img-box">
             <Image
-              src={HubertImg03.src}
+              src={HubertImg01.src}
               loading="lazy"
               alt="O mnie"
               width={360}
-              height={240}
+              height={360}
             />
           </div>
         </div>
 
         <h2 id="konsultacje">KONSULTACJE INDYWIDUALNE</h2>
-        <div className="img-text-wrapper reversed">
-          <div className="img-box">
-            <Image
-              src={HubertImg01.src}
-              loading="lazy"
-              alt="O mnie"
-              width={360}
-              height={240}
-            />
-          </div>
-          <div className="text-box dark-text">
-            <div className="text-box-slot">
-              <p>
-                Konsultacje indywidualne prowadzę dla dzieci, młodzieży i osób
-                dorosłych.
-              </p>
-            </div>
+        <div className="brown-text-box">
+          <div className="brown-text-box-slot">
+            <p>
+              Konsultacje indywidualne prowadzę dla dzieci, młodzieży i osób
+              dorosłych.
+            </p>
           </div>
         </div>
       </div>
