@@ -19,7 +19,7 @@ const Courses = () => {
           height={500}
           alt="Brązowy kształt"
         />
-        <div className="img-text-wrapper-ver02">
+        <div className="img-text-wrapper">
           <div className="text-box dark-text">
             <div className="text-box-slot">
               <p>
