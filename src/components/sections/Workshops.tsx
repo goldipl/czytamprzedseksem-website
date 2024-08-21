@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import GoldShapeWorkshop01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
 import GoldShapeWorkshop02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
-import HubertImg03 from "./../../../public/img/hubert/hubert03.jpg";
+import Photo02 from "./../../../public/img/photos/photos02.jpg";
+import Photo03 from "./../../../public/img/photos/photos03.jpg";
 
 const Workshops = () => {
   return (
@@ -72,10 +73,18 @@ const Workshops = () => {
             <Image
               className="workshop-bottom-img"
               loading="lazy"
-              src={HubertImg03.src}
+              src={Photo02.src}
               width={480}
               height={320}
-              alt="Hubert Pajączkowski"
+              alt="Hubert Pajączkowski - warsztaty"
+            />
+            <Image
+              className="workshop-bottom-img"
+              loading="lazy"
+              src={Photo03.src}
+              width={480}
+              height={320}
+              alt="Hubert Pajączkowski - warsztaty"
             />
           </div>
         </div>

@@ -38,8 +38,12 @@
       align-items: center;
       margin: 32px 0 0 0;
       z-index: 2;
+      gap: 40px;
       &-img {
         border-radius: 16px;
+        height: auto;
+        max-height: 600px;
+        object-fit: cover;
       }
     }
   }
@@ -63,6 +67,8 @@
         z-index: 0;
       }
       .workshop-bottom {
+        flex-direction: column;
+        gap: 16px;
         &-img {
           max-width: 80%;
           height: auto;
