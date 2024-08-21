@@ -30,12 +30,14 @@
       transform: rotate(90deg);
     }
     .workshop-bottom {
+      position: relative;
       display: flex;
       flex-direction: row;
       width: 100%;
       justify-content: center;
       align-items: center;
       margin: 32px 0 0 0;
+      z-index: 2;
       &-img {
         border-radius: 16px;
       }
@@ -55,9 +57,16 @@
         margin: 0 0 40px 0;
       }
       .golden-shape-workshops01 {
-        bottom: -118px;
+        bottom: -102px;
         right: 0;
         opacity: 0.7;
+        z-index: 0;
+      }
+      .workshop-bottom {
+        &-img {
+          max-width: 80%;
+          height: auto;
+        }
       }
     }
   }
