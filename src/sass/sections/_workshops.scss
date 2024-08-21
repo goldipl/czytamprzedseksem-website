@@ -29,7 +29,7 @@
       z-index: 0;
       transform: rotate(90deg);
     }
-    .workshop-bottom {
+    .img-text-wrapper {
       position: relative;
       display: flex;
       flex-direction: row;
@@ -39,11 +39,23 @@
       margin: 32px 0 0 0;
       z-index: 2;
       gap: 40px;
-      &-img {
-        border-radius: 16px;
-        height: auto;
-        max-height: 600px;
-        object-fit: cover;
+      &.reverted {
+        .text-box {
+          order: 2;
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .img-box {
+        margin: 0;
+        .workshop-bottom-img {
+          border-radius: 16px;
+          width: 280px;
+          height: auto;
+          max-height: 600px;
+          object-fit: cover;
+        }
       }
     }
   }
@@ -66,13 +78,23 @@
         opacity: 0.7;
         z-index: 0;
       }
-      .workshop-bottom {
+      .img-text-wrapper {
         flex-direction: column;
-        gap: 16px;
-        &-img {
-          max-width: 80%;
-          height: auto;
+        .img-box {
+          text-align: center;
         }
+        &.reverted {
+          .text-box {
+            order: 1;
+          }
+          .img-box {
+            order: 2;
+          }
+        }
+      }
+      .workshop-bottom-img {
+        max-width: 80%;
+        height: auto;
       }
     }
   }

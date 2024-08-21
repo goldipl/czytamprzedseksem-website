@@ -26,7 +26,8 @@ const Workshops = () => {
           height={400}
           alt="Złoty kształt"
         />
-        <div className="workshops-box">
+
+        <div className="img-text-wrapper">
           <div className="text-box">
             <div className="text-box-slot">
               <p>
@@ -48,6 +49,21 @@ const Workshops = () => {
                 i akceptacji swojego ciała, tożsamości płciowej i seksualnej.
               </p>
             </div>
+          </div>
+          <div className="img-box">
+            <Image
+              className="workshop-bottom-img"
+              loading="lazy"
+              src={Photo02.src}
+              width={280}
+              height={320}
+              alt="Hubert Pajączkowski - warsztaty"
+            />
+          </div>
+        </div>
+
+        <div className="img-text-wrapper reverted">
+          <div className="text-box">
             <div className="text-box-slot">
               <p>
                 Zajęcia prowadzę formą warsztatową. Dbam o przekazywanie treści
@@ -69,20 +85,12 @@ const Workshops = () => {
               </p>
             </div>
           </div>
-          <div className="workshop-bottom">
-            <Image
-              className="workshop-bottom-img"
-              loading="lazy"
-              src={Photo02.src}
-              width={480}
-              height={320}
-              alt="Hubert Pajączkowski - warsztaty"
-            />
+          <div className="img-box">
             <Image
               className="workshop-bottom-img"
               loading="lazy"
               src={Photo03.src}
-              width={480}
+              width={280}
               height={320}
               alt="Hubert Pajączkowski - warsztaty"
             />
