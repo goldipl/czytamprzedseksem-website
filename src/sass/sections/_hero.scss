@@ -57,9 +57,8 @@
         background-clip: text;
         color: $transparent;
         filter: brightness(1.2);
-        margin-bottom: 12px;
       }
-      h3 {
+      h2 {
         font-size: 22px;
         font-weight: 600;
         color: $text-secondary-color01;
@@ -78,7 +77,7 @@
         }
       }
       .hero-desc {
-        margin: 16px 0 0 0;
+        margin: 16px 16px 0 16px;
         > p {
           font-size: 14px;
           font-weight: 400;
@@ -134,10 +133,11 @@
           font-size: 36px;
           line-height: 44px;
         }
-        h3 {
+        h2 {
           font-size: 20px;
         }
         .hero-desc {
+          max-width: 600px;
           > p {
             font-size: 12px;
           }
