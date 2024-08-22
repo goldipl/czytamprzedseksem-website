@@ -82,6 +82,11 @@
         flex-direction: column;
         .img-box {
           text-align: center;
+          .workshop-bottom-img {
+            max-width: 85%;
+            height: auto;
+            width: 85%;
+          }
         }
         &.reverted {
           .text-box {
@@ -91,10 +96,6 @@
             order: 2;
           }
         }
-      }
-      .workshop-bottom-img {
-        max-width: 80%;
-        height: auto;
       }
     }
   }
