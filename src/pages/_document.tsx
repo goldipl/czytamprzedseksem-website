@@ -18,6 +18,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="./icons/favicon.ico" />
           <link rel="apple-touch-icon" href="./icons/favicon.ico" />
+          <title>Czytam przed seksem - Hubert Pajączkowski</title>
         </Head>
         <body>
           <Main />
