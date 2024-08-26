@@ -1,32 +1,32 @@
 .cooperation-section {
-  background-color: $main-bg-color01;
+  background-color: $main-bg-color02;
   height: auto;
-  padding: 100px 0;
+  padding: 140px 0;
   &-wrapper {
     position: relative;
     max-width: calc(1280px - 160px);
     width: 100%;
     margin: 0 auto;
     h2 {
-      color: $text-primary-color01;
+      color: $text-secondary-color01;
       font-size: 40px;
       margin-bottom: 24px;
       text-transform: uppercase;
       text-align: center;
       margin: 0 0 64px 0;
     }
-    .golden-shape-cooperation01 {
+    .brown-shape-news01 {
       position: absolute;
-      bottom: -140px;
-      left: -320px;
+      bottom: -343px;
+      left: -80px;
       z-index: 0;
+      transform: rotate(270deg);
     }
-    .golden-shape-cooperation02 {
+    .brown-shape-news02 {
       position: absolute;
-      top: -238px;
-      right: -160px;
+      bottom: 0px;
+      right: -400px;
       z-index: 0;
-      transform: rotate(-90deg);
     }
   }
 }
@@ -42,13 +42,8 @@
         font-size: 28px;
         margin: 0 0 40px 0;
       }
-      .golden-shape-cooperation01 {
-        bottom: -103px;
-        left: -80px;
-      }
-      .golden-shape-cooperation02 {
-        top: -201px;
-        right: -120px;
+      .brown-shape-news01 {
+        display: none;
       }
     }
   }

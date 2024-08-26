@@ -4,8 +4,8 @@ import Link from "next/link";
 import newsImg01 from "./../../../public/img/news/Fake-kNOw-more-wplyw-emocji-na-dezinformacje.jpg";
 import newsImg02 from "./../../../public/img/news/love-hate-relationship-z-tinderem.jpg";
 import newsImg03 from "./../../../public/img/news/Mamy-Czas-Kartkowka-z-WDZ.png";
-import BrownShapeNews01 from "./../../../public/shapes/brown-on-gold-shape01.jpg";
-import BrownShapeNews02 from "./../../../public/shapes/brown-on-gold-shape03.jpg";
+import GoldShapeCooperation01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
+import GoldShapeCooperation02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 
 const News = () => {
   return (
@@ -13,20 +13,20 @@ const News = () => {
       <div className="news-section-wrapper">
         <h2>Moje projekty</h2>
         <Image
-          className="brown-shape-news01"
-          src={BrownShapeNews01.src}
+          className="golden-shape-cooperation01"
           loading="lazy"
-          width={173}
-          height={500}
-          alt="Brązowy kształt"
+          src={GoldShapeCooperation01.src}
+          width={224}
+          height={300}
+          alt="Złoty kształt"
         />
         <Image
-          className="brown-shape-news02"
-          src={BrownShapeNews02.src}
+          className="golden-shape-cooperation02"
           loading="lazy"
-          width={524}
-          height={484}
-          alt="Brązowy kształt"
+          src={GoldShapeCooperation02.src}
+          width={124}
+          height={400}
+          alt="Złoty kształt"
         />
         <div className="news-box">
           <div className="news-box-slot">

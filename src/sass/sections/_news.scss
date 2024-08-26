@@ -1,5 +1,5 @@
 .news-section {
-  background-color: $main-bg-color02;
+  background-color: $main-bg-color01;
   height: auto;
   padding: 100px 0;
   &-wrapper {
@@ -8,25 +8,25 @@
     width: 100%;
     margin: 0 auto;
     h2 {
-      color: $text-secondary-color01;
+      color: $text-primary-color01;
       font-size: 40px;
       margin-bottom: 24px;
       text-transform: uppercase;
       text-align: center;
       margin: 0 0 64px 0;
     }
-    .brown-shape-news01 {
+    .golden-shape-cooperation01 {
       position: absolute;
-      bottom: -303px;
-      left: -80px;
+      bottom: -140px;
+      left: -320px;
       z-index: 0;
-      transform: rotate(270deg);
     }
-    .brown-shape-news02 {
+    .golden-shape-cooperation02 {
       position: absolute;
-      bottom: 120px;
-      right: -400px;
+      top: -238px;
+      right: -160px;
       z-index: 0;
+      transform: rotate(-90deg);
     }
     .news-box {
       display: flex;
@@ -94,8 +94,13 @@
         font-size: 28px;
         margin: 0 0 40px 0;
       }
-      .brown-shape-news01 {
-        display: none;
+      .golden-shape-cooperation01 {
+        bottom: -103px;
+        left: -80px;
+      }
+      .golden-shape-cooperation02 {
+        top: -201px;
+        right: -120px;
       }
       .news-box {
         gap: 24px;
