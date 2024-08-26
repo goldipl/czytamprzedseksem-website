@@ -83,7 +83,7 @@ const Workshops = () => {
                 Pierwsze spotkanie jest spotkaniem zapoznawczym i integracyjnym.
                 Godzinę pracy wyceniam na 150 zł netto.{" "}
                 <strong>
-                  <Link href="#skontaktuj-sie-ze-mna">
+                  <Link href="#skontaktuj-sie">
                     Pełną ofertę cenową przygotowuję indywidualnie
                   </Link>
                 </strong>
