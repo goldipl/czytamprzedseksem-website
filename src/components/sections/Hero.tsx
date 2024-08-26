@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import heroVideo from "./../../../public/movie/background-movie.mp4";
-import avatar from "./../../../public/img/avatar.svg";
 import Link from "next/link";
 
 const Hero = () => {
@@ -11,7 +9,6 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
       <div className="hero-wrapper">
-        <Image src={avatar} alt="avatar" className="hero-wrapper__avatar" />
         <div className="hero-wrapper__text">
           <h1>Hubert Pajączkowski</h1>
           <h2>
