@@ -82,9 +82,11 @@ const Workshops = () => {
                 ale rekomenduję cykl składający się z co najmniej 6 spotkań.
                 Pierwsze spotkanie jest spotkaniem zapoznawczym i integracyjnym.
                 Godzinę pracy wyceniam na 150 zł netto.{" "}
-                <Link href="#skontaktuj-sie-ze-mna">
-                  Pełną ofertę cenową przygotowuję indywidualnie
-                </Link>
+                <strong>
+                  <Link href="#skontaktuj-sie-ze-mna">
+                    Pełną ofertę cenową przygotowuję indywidualnie
+                  </Link>
+                </strong>
                 . W cenie mieści się przygotowanie przed warsztatami oraz
                 materiały dla osób uczestniczących.
               </p>
