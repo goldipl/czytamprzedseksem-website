@@ -58,6 +58,15 @@
         transform: rotate(90deg);
         width: 150px;
       }
+      .img-text-wrapper {
+        .img-box {
+          margin: 16px auto 0;
+          text-align: center;
+          img {
+            width: 85%;
+          }
+        }
+      }
     }
   }
 }
