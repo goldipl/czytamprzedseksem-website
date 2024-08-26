@@ -20,7 +20,7 @@ const Hero = () => {
               opiekuńczo-wychowawczymi i z klientami indywidualnymi.
             </p>
           </div>
-          <Link href="#news-section" className="button01">
+          <Link href="#moje-projekty" className="button01">
             Sprawdź aktualności
           </Link>
         </div>

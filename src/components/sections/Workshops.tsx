@@ -4,6 +4,7 @@ import GoldShapeWorkshop01 from "./../../../public/shapes/gold-on-brown-shape01.
 import GoldShapeWorkshop02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 import Photo02 from "./../../../public/img/photos/photos02.jpg";
 import Photo03 from "./../../../public/img/photos/photos03.jpg";
+import Link from "next/link";
 
 const Workshops = () => {
   return (
@@ -77,11 +78,17 @@ const Workshops = () => {
             </div>
             <div className="text-box-slot">
               <p>
-                Warsztaty dostosowuję do indywidualnych potrzeb placówki, ale
-                rekomenduję cykl składający się z co najmniej 6 spotkań.
-                Materiały przygotowuję sam i zapewniam je osobom uczestniczącym
-                w zajęciach. Pierwsze spotkanie jest spotkaniem zapoznawczym i
-                integracyjnym.
+                <strong>
+                  Formę warsztatów dostosowuję do indywidualnych potrzeb
+                  placówki, ale rekomenduję cykl składający się z co najmniej 6
+                  spotkań. Pierwsze spotkanie jest spotkaniem zapoznawczym i
+                  integracyjnym. Godzinę pracy wyceniam na 150 zł netto.{" "}
+                  <Link href="#skontaktuj-sie-ze-mna">
+                    Pełną ofertę cenową przygotowuję indywidualnie
+                  </Link>
+                  . W cenie mieści się przygotowanie przed warsztatami oraz
+                  materiały dla osób uczestniczących.
+                </strong>
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ import GoldShapeCooperation02 from "./../../../public/shapes/gold-on-brown-shape
 
 const News = () => {
   return (
-    <section id="news-section" className="news-section">
+    <section id="moje-projekty" className="news-section">
       <div className="news-section-wrapper">
         <h2>Moje projekty</h2>
         <Image
