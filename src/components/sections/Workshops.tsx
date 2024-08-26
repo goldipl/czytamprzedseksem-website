@@ -78,17 +78,15 @@ const Workshops = () => {
             </div>
             <div className="text-box-slot">
               <p>
-                <strong>
-                  Formę warsztatów dostosowuję do indywidualnych potrzeb
-                  placówki, ale rekomenduję cykl składający się z co najmniej 6
-                  spotkań. Pierwsze spotkanie jest spotkaniem zapoznawczym i
-                  integracyjnym. Godzinę pracy wyceniam na 150 zł netto.{" "}
-                  <Link href="#skontaktuj-sie-ze-mna">
-                    Pełną ofertę cenową przygotowuję indywidualnie
-                  </Link>
-                  . W cenie mieści się przygotowanie przed warsztatami oraz
-                  materiały dla osób uczestniczących.
-                </strong>
+                Formę warsztatów dostosowuję do indywidualnych potrzeb placówki,
+                ale rekomenduję cykl składający się z co najmniej 6 spotkań.
+                Pierwsze spotkanie jest spotkaniem zapoznawczym i integracyjnym.
+                Godzinę pracy wyceniam na 150 zł netto.{" "}
+                <Link href="#skontaktuj-sie-ze-mna">
+                  Pełną ofertę cenową przygotowuję indywidualnie
+                </Link>
+                . W cenie mieści się przygotowanie przed warsztatami oraz
+                materiały dla osób uczestniczących.
               </p>
             </div>
           </div>
