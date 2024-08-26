@@ -136,8 +136,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="#skontaktuj-sie-ze-mna" onClick={handleCloseDropdown}>
-                Kontakt
+              <Link href="#o-mnie" onClick={handleCloseDropdown}>
+                O mnie
+              </Link>
+            </li>
+            <li>
+              <Link href="#skontaktuj-sie" onClick={handleCloseDropdown}>
+                Skontaktuj się
               </Link>
             </li>
           </ul>

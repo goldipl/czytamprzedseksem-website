@@ -9,7 +9,7 @@ import aleImg from "./../../../public/img/cooperation/fundacja-ale.jpg";
 
 const Cooperation = () => {
   return (
-    <section id="cooperation-section" className="cooperation-section">
+    <section id="wspolpraca" className="cooperation-section">
       <div className="cooperation-section-wrapper">
         <Image
           className="brown-shape-news01"

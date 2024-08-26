@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Workshops = () => {
   return (
-    <section id="workshops-section" className="workshops-section">
+    <section id="warsztaty" className="workshops-section">
       <div className="workshops-section-wrapper">
         <h2>Warsztaty</h2>
         <Image

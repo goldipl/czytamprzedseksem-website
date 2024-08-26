@@ -7,7 +7,7 @@ import GoldShapeAboutMe02 from "./../../../public/shapes/gold-on-brown-shape02.j
 
 const AboutMe = () => {
   return (
-    <section id="aboutme-section" className="aboutme-section">
+    <section id="o-mnie" className="aboutme-section">
       <div className="aboutme-section-wrapper">
         <Image
           className="golden-shape-aboutme01"
