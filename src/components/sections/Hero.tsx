@@ -11,9 +11,11 @@ const Hero = () => {
       <div className="hero-wrapper">
         <div className="hero-wrapper__text">
           <h1>Hubert Pajączkowski</h1>
-          <h2>
-            <span>-</span> edukator seksualny <span>-</span>
-          </h2>
+          <div className="middle-text">
+            <span>-</span>
+            <h2>edukator seksualny</h2>
+            <span>-</span>
+          </div>
           <div className="hero-desc">
             <p>
               Współpracuję ze szkołami, organizacjami pozarządowymi, ośrodkami
