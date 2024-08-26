@@ -50,6 +50,14 @@
       .img-text-wrapper + h2 {
         margin: 56px 0 40px 0;
       }
+      .brown-shape-courses01 {
+        position: absolute;
+        top: -206px;
+        left: -40px;
+        z-index: 0;
+        transform: rotate(90deg);
+        width: 150px;
+      }
     }
   }
 }
