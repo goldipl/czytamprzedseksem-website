@@ -1,12 +1,8 @@
 .button01 {
-  --offset: 6px;
-  --border-size: 1px;
-
   display: flex;
   position: relative;
   padding: 8px 32px;
   appearance: none;
-  border: 0;
   background: transparent;
   color: $main-bg-color01;
   text-transform: none;
@@ -14,66 +10,25 @@
   outline: none;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   transition: background 0.8s ease;
   text-decoration: none;
   width: max-content;
   font-size: 14px;
   font-weight: 600;
+  border-radius: 24px;
+  transition: 0.6s;
+  background: linear-gradient(
+    90deg,
+    $main-bg-color02 15.1%,
+    $main-bg-color02opacity08 85.42%
+  );
+  border: 1px solid $transparent;
 
   &:hover {
-    background: rgba(100, 0, 0, 0.03);
-  }
-
-  &__horizontal,
-  &__vertical {
-    position: absolute;
-    top: var(--horizontal-offset, 0);
-    right: var(--vertical-offset, 0);
-    bottom: var(--horizontal-offset, 0);
-    left: var(--vertical-offset, 0);
-    transition: transform 0.8s ease;
-    will-change: transform;
-
-    &::before {
-      content: "";
-      position: absolute;
-      border: inherit;
-    }
-  }
-
-  &__horizontal {
-    --vertical-offset: calc(var(--offset) * -1);
-    border-top: var(--border-size) solid currentcolor;
-    border-bottom: var(--border-size) solid currentcolor;
-
-    &::before {
-      top: calc(var(--vertical-offset) - var(--border-size));
-      bottom: calc(var(--vertical-offset) - var(--border-size));
-      left: calc(var(--vertical-offset) * -1);
-      right: calc(var(--vertical-offset) * -1);
-    }
-  }
-
-  &:hover &__horizontal {
-    transform: scaleX(0);
-  }
-
-  &__vertical {
-    --horizontal-offset: calc(var(--offset) * -1);
-    border-left: var(--border-size) solid currentcolor;
-    border-right: var(--border-size) solid currentcolor;
-
-    &::before {
-      top: calc(var(--horizontal-offset) * -1);
-      bottom: calc(var(--horizontal-offset) * -1);
-      left: calc(var(--horizontal-offset) - var(--border-size));
-      right: calc(var(--horizontal-offset) - var(--border-size));
-    }
-  }
-
-  &:hover &__vertical {
-    transform: scaleY(0);
+    background: linear-gradient(
+      180deg,
+      $main-bg-color02 15.1%,
+      $main-bg-color02opacity08 85.42%
+    );
   }
 }

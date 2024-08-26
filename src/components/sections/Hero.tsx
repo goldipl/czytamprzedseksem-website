@@ -21,9 +21,7 @@ const Hero = () => {
             </p>
           </div>
           <Link href="#news-section" className="button01">
-            Sprawdź najnowsze treści
-            <div className="button01__horizontal"></div>
-            <div className="button01__vertical"></div>
+            Sprawdź aktualności
           </Link>
         </div>
       </div>
