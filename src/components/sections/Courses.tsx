@@ -10,7 +10,7 @@ const Courses = () => {
       className="courses-section"
     >
       <div className="courses-section-wrapper">
-        <h2>SPOTKANIA Z RODZICAMI I KADRĄ PEDAGOGICZNĄ</h2>
+        <h2>SPOTKANIA Z RODZICAMI I/LUB KADRĄ PEDAGOGICZNĄ</h2>
         <Image
           className="brown-shape-courses01"
           loading="lazy"

@@ -125,7 +125,7 @@ const Header = () => {
                     href="#spotkania-z-rodzicami-i-kadra-pedagogiczna"
                     onClick={handleCloseDropdown}
                   >
-                    Z rodzicami i kadrą pedagogiczną
+                    Z rodzicami i/lub kadrą pedagogiczną
                   </Link>
                 </li>
               </ul>
