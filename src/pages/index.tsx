@@ -20,13 +20,13 @@ const index = () => {
       </header>
       <main>
         <Hero />
-        <AboutMe />
-        <News />
         <Workshops />
         <PrimarySchoolWorkshops />
         <HighSchoolWorkshops />
         <Courses />
+        <News />
         <Cooperation />
+        <AboutMe />
         <Contact />
       </main>
       <footer>
