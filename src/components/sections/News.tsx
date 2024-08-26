@@ -11,7 +11,7 @@ const News = () => {
   return (
     <section id="news-section" className="news-section">
       <div className="news-section-wrapper">
-        <h2>Aktualności</h2>
+        <h2>Moje projekty</h2>
         <Image
           className="brown-shape-news01"
           src={BrownShapeNews01.src}
