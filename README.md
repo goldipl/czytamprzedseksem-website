@@ -6,6 +6,10 @@
     This is a <a href="https://nextjs.org/">Next.js</a> project bootstrapped with <a href="https://github.com/vercel/next.js/tree/canary/packages/create-next-app">create-next-app</a>.
 </p>
 
+<p align="center">
+    Next.js, TypeScript website. This page is dedicated to sexual education, offering insights and resources from a qualified sexual education instructor with a degree in practical sexology and ongoing psychology studies. Here, you can learn about educational projects and classes conducted in primary and secondary schools.
+</p>
+
 ## Table of contents
 
 - [License](#license)
