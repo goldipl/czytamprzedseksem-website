@@ -25,8 +25,8 @@ const index = () => {
         <HighSchoolWorkshops />
         <Courses />
         <News />
-        <Cooperation />
         <AboutMe />
+        <Cooperation />
         <Contact />
       </main>
       <footer>

@@ -1,5 +1,5 @@
 .cooperation-section {
-  background-color: $main-bg-color02;
+  background-color: $main-bg-color01;
   height: auto;
   padding: 140px 0;
   &-wrapper {
@@ -8,25 +8,25 @@
     width: 100%;
     margin: 0 auto;
     h2 {
-      color: $text-secondary-color01;
+      color: $text-primary-color01;
       font-size: 40px;
       margin-bottom: 24px;
       text-transform: uppercase;
       text-align: center;
       margin: 0 0 64px 0;
     }
-    .brown-shape-news01 {
+    .golden-shape-aboutme01 {
       position: absolute;
-      bottom: -343px;
-      left: -80px;
+      bottom: -180px;
+      left: -340px;
       z-index: 0;
-      transform: rotate(270deg);
     }
-    .brown-shape-news02 {
+    .golden-shape-aboutme02 {
       position: absolute;
-      bottom: 0px;
-      right: -400px;
+      top: -278px;
+      right: -160px;
       z-index: 0;
+      transform: rotate(-90deg);
     }
   }
 }
@@ -42,13 +42,16 @@
         font-size: 28px;
         margin: 0 0 40px 0;
       }
-      .brown-shape-news01 {
-        display: none;
+      .golden-shape-aboutme01 {
+        bottom: -96px;
+        left: -40px;
+        opacity: 0.65;
       }
-      .brown-shape-news02 {
-        width: 300px;
+      .golden-shape-aboutme02 {
+        top: -205px;
+        right: -40px;
+        width: 80px;
         height: auto;
-        right: -220px;
       }
     }
   }
