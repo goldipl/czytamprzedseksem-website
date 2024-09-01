@@ -26,7 +26,7 @@ const Courses = () => {
                 Spotkania dla rodziców i nauczycieli prowadzę w formie szkolenia
                 połączonego z dyskusją. Temat zazwyczaj jest wybierany w
                 porozumieniu z rodzicami i szkołą. Najczęściej proponowane
-                zagadnienia to pornografia, dojrzewanie, relacje, tożsamość
+                zagadnienia: to pornografia, dojrzewanie, relacje, tożsamość
                 płciowa i seksualna. Spotkanie realizowane jest w formie 2
                 godzin zegarowych.
               </p>
