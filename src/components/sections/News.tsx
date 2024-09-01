@@ -4,6 +4,7 @@ import Link from "next/link";
 import newsImg01 from "./../../../public/img/news/Fake-kNOw-more-wplyw-emocji-na-dezinformacje.jpg";
 import newsImg02 from "./../../../public/img/news/love-hate-relationship-z-tinderem.jpg";
 import newsImg03 from "./../../../public/img/news/Mamy-Czas-Kartkowka-z-WDZ.png";
+import newsImg04 from "./../../../public/img/news/first-date.jpg";
 import GoldShapeCooperation01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
 import GoldShapeCooperation02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 
@@ -29,6 +30,23 @@ const News = () => {
           alt="Złoty kształt"
         />
         <div className="news-box">
+          <div className="news-box-slot">
+            <Link
+              href="https://www.vogue.pl/a/o-czym-rozmawiac-na-pierwszej-rance-by-poznac-druga-osobe-i-uniknac-krepujacej-ciszy"
+              target="_blank"
+            >
+              <Image
+                src={newsImg04.src}
+                loading="lazy"
+                width={600}
+                height={315}
+                alt="O czym rozmawiać na pierwszej randce, by była udana"
+              />
+              <div className="news-box-slot__title">
+                <h3>O czym rozmawiać na pierwszej randce, by była udana</h3>
+              </div>
+            </Link>
+          </div>
           <div className="news-box-slot">
             <Link
               href="https://www.youtube.com/watch?v=NahyRycwWE4"
