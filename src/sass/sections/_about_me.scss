@@ -23,9 +23,11 @@
     }
     .brown-shape-news02 {
       position: absolute;
-      bottom: 0px;
-      right: -400px;
+      bottom: 80px;
+      right: -200px;
       z-index: 0;
+      width: 320px;
+      height: auto;
     }
     .text-box {
       &-slot {
