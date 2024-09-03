@@ -27,7 +27,7 @@ class MyDocument extends Document {
           />
           <meta
             name="keywords"
-            content="edukator seksualny, edukacja seksualna, seksuologia, bezpieczeństwo w sieci, wychowanie do życia w rodzinie"
+            content="edukator seksualny, edukacja seksualna, seksuologia, bezpieczeństwo w sieci, wychowanie do życia w rodzinie, czytam przed seksem, czytamprzedseksem, hubert pajączkowski"
           />
           <meta name="author" content="Hubert Pajączkowski" />
           <meta
@@ -53,9 +53,8 @@ class MyDocument extends Document {
           <meta name="twitter:image" content="/img/hubert/hubert02.jpg" />
           <meta name="robots" content="index, follow" /> */}
 
-          {/*Github version noindex, no follow */}
+          {/* Github nofollow/noindex */}
           <meta name="robots" content="noindex, nofollow" />
-
           <link rel="icon" href="./icons/favicon.ico" />
           <link rel="apple-touch-icon" href="./icons/favicon.ico" />
           <title>Czytam przed seksem - Hubert Pajączkowski</title>
