@@ -66,3 +66,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Screenshots
 
 ![screenshot](./screenshots/screenshot01.jpg)
+
+## Production build
+
+```bash
+npm run build    # Builds the app for production
+npm run export   # Exports the app to the out/ directory
+```
