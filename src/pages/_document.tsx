@@ -55,7 +55,7 @@ class MyDocument extends Document {
 
           {/* Github nofollow/noindex */}
           <meta name="robots" content="noindex, nofollow" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/favicon.ico" />
           <title>Czytam przed seksem - Hubert Pajączkowski</title>
         </Head>
