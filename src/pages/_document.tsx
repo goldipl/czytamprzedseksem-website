@@ -21,7 +21,7 @@ class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          {/* <meta
+          <meta
             name="description"
             content="Hubert Pajączkowski - edukator seksualny, współpraca ze szkołami, organizacjami pozarządowymi, i klientami indywidualnymi."
           />
@@ -51,10 +51,7 @@ class MyDocument extends Document {
             content="Edukator seksualny współpracujący ze szkołami, organizacjami i klientami indywidualnymi."
           />
           <meta name="twitter:image" content="/img/hubert/hubert02.jpg" />
-          <meta name="robots" content="index, follow" /> */}
-
-          {/* Github nofollow/noindex */}
-          <meta name="robots" content="noindex, nofollow" />
+          <meta name="robots" content="index, follow" />
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/favicon.ico" />
           <title>Czytam przed seksem - Hubert Pajączkowski</title>
