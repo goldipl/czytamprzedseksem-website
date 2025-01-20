@@ -5,6 +5,8 @@ import newsImg01 from "./../../../public/img/news/Fake-kNOw-more-wplyw-emocji-na
 import newsImg02 from "./../../../public/img/news/love-hate-relationship-z-tinderem.jpg";
 import newsImg03 from "./../../../public/img/news/Mamy-Czas-Kartkowka-z-WDZ.png";
 import newsImg04 from "./../../../public/img/news/first-date.jpg";
+import newsImg05 from "./../../../public/img/news/czy-edukacja-zdrowotna-bedzie-obowiazkowa-od-2025-roku.jpg";
+import newsImg06 from "./../../../public/img/news/rozpoznawanie-wlasnych-granic-i-umiejetnosc-ich-egzekwowania.jpg";
 import GoldShapeCooperation01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
 import GoldShapeCooperation02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 
@@ -30,6 +32,42 @@ const News = () => {
           alt="Złoty kształt"
         />
         <div className="news-box">
+          <div className="news-box-slot">
+            <Link
+              href="https://www.youtube.com/watch?v=QBFsc7Ev3nw"
+              target="_blank"
+            >
+              <Image
+                src={newsImg06.src}
+                loading="lazy"
+                width={600}
+                height={315}
+                alt="Rozpoznawanie własnych granic i umiejętność ich egzekwowania"
+              />
+              <div className="news-box-slot__title">
+                <h3>
+                  Rozpoznawanie własnych granic i umiejętność ich egzekwowania
+                </h3>
+              </div>
+            </Link>
+          </div>
+          <div className="news-box-slot">
+            <Link
+              href="https://sexed.pl/czy-edukacja-zdrowotna-bedzie-obowiazkowa-od-2025-roku/"
+              target="_blank"
+            >
+              <Image
+                src={newsImg05.src}
+                loading="lazy"
+                width={600}
+                height={315}
+                alt="Czy edukacja zdrowotna będzie obowiązkowa od 2025 roku?"
+              />
+              <div className="news-box-slot__title">
+                <h3>Czy edukacja zdrowotna będzie obowiązkowa od 2025 roku?</h3>
+              </div>
+            </Link>
+          </div>
           <div className="news-box-slot">
             <Link
               href="https://www.vogue.pl/a/o-czym-rozmawiac-na-pierwszej-rance-by-poznac-druga-osobe-i-uniknac-krepujacej-ciszy"
