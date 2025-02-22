@@ -11,7 +11,7 @@ const Contact = () => {
         <h2>Skontaktuj się</h2>
         <div className="social-links">
           <div className="social-links-slot">
-            <a
+            <Link
               href="mailto:hubertpajaczkowski@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -27,7 +27,7 @@ const Contact = () => {
               <span className="social-links-slot__text">
                 hubertpajaczkowski@gmail.com
               </span>
-            </a>
+            </Link>
           </div>
           <div className="social-links-slot">
             <Link
