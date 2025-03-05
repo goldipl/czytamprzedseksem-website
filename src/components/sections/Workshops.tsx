@@ -81,7 +81,7 @@ const Workshops = () => {
                 Formę warsztatów dostosowuję do indywidualnych potrzeb placówki,
                 ale rekomenduję cykl składający się z co najmniej 6 spotkań.
                 Pierwsze spotkanie jest spotkaniem zapoznawczym i integracyjnym.
-                Godzinę pracy wyceniam na 150 zł netto.{" "}
+                Wystawiam faktury. Godzinę pracy wyceniam na 200 zł brutto.{" "}
                 <strong>
                   <Link href="#skontaktuj-sie">
                     Pełną ofertę cenową przygotowuję indywidualnie
