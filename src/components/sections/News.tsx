@@ -140,6 +140,48 @@ const News = () => {
             </Link>
           </div>
         </div>
+        <h2>Edukacyjne shorty</h2>
+        <div className="shorts-box">
+          <div className="shorts-box-slot">
+            <iframe
+              loading="lazy"
+              width="340"
+              height="620"
+              src="https://www.youtube.com/embed/D8KNDnN5YKA?si=HMuU-A7gb8zpX50x"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="shorts-box-slot">
+            <iframe
+              loading="lazy"
+              width="340"
+              height="620"
+              src="https://www.youtube.com/embed/gW06-kMgDt8?si=b8TnbnoIM8L1qLwM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="shorts-box-slot">
+            <iframe
+              loading="lazy"
+              width="340"
+              height="620"
+              src="https://www.youtube.com/embed/Or0zWYbZk3s?si=Qqfv6j2-MGrpwOXr"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
   );

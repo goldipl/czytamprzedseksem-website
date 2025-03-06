@@ -1,0 +1,32 @@
+.shorts-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  @media (max-width: 991px) {
+    gap: 24px;
+  }
+  &-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    width: 30%;
+    @media (max-width: 991px) {
+      width: 47%;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+    iframe {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 460px;
+      border-radius: 16px;
+      z-index: 1;
+    }
+  }
+}
