@@ -1,7 +1,7 @@
 .news-section {
   background-color: $main-bg-color01;
   height: auto;
-  padding: 100px 0;
+  padding: 100px 0 160px 0;
   &-wrapper {
     position: relative;
     max-width: calc(1280px - 160px);
@@ -17,8 +17,8 @@
     }
     .golden-shape-cooperation01 {
       position: absolute;
-      bottom: -99px;
-      left: -320px;
+      bottom: -160px;
+      left: -350px;
       z-index: 0;
     }
     .golden-shape-cooperation02 {
