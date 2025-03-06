@@ -149,10 +149,10 @@ const News = () => {
               height="620"
               src="https://www.youtube.com/embed/D8KNDnN5YKA?si=HMuU-A7gb8zpX50x"
               title="YouTube video player"
-              frameborder="0"
+              style={{ border: "none" }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
           <div className="shorts-box-slot">
@@ -162,10 +162,10 @@ const News = () => {
               height="620"
               src="https://www.youtube.com/embed/gW06-kMgDt8?si=b8TnbnoIM8L1qLwM"
               title="YouTube video player"
-              frameborder="0"
+              style={{ border: "none" }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
           <div className="shorts-box-slot">
@@ -175,10 +175,10 @@ const News = () => {
               height="620"
               src="https://www.youtube.com/embed/Or0zWYbZk3s?si=Qqfv6j2-MGrpwOXr"
               title="YouTube video player"
-              frameborder="0"
+              style={{ border: "none" }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
         </div>
