@@ -160,19 +160,6 @@ const News = () => {
               loading="lazy"
               width="340"
               height="620"
-              src="https://www.youtube.com/embed/gW06-kMgDt8?si=b8TnbnoIM8L1qLwM"
-              title="YouTube video player"
-              style={{ border: "none" }}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className="shorts-box-slot">
-            <iframe
-              loading="lazy"
-              width="340"
-              height="620"
               src="https://www.youtube.com/embed/Or0zWYbZk3s?si=Qqfv6j2-MGrpwOXr"
               title="YouTube video player"
               style={{ border: "none" }}
