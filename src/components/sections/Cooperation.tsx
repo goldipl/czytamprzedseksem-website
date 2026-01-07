@@ -5,7 +5,8 @@ import GoldShapeAboutMe01 from "./../../../public/shapes/gold-on-brown-shape01.j
 import GoldShapeAboutMe02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
 import sexedImg from "./../../../public/img/cooperation/sexedpl.png";
 import czescCialoImg from "./../../../public/img/cooperation/czesc-cialo.jpg";
-import aleImg from "./../../../public/img/cooperation/fundacja-ale.jpg";
+import rozowaSkrzyneczka from "./../../../public/img/cooperation/rozowa-skrzyneczka.png";
+import poleDialogu from "./../../../public/img/cooperation/fundacja-pole-dialogu.png";
 
 const Cooperation = () => {
   return (
@@ -34,7 +35,7 @@ const Cooperation = () => {
                 loading="lazy"
                 width={300}
                 height={300}
-                alt="sexed"
+                alt="Sexed"
               />
             </Link>
           </div>
@@ -45,18 +46,29 @@ const Cooperation = () => {
                 loading="lazy"
                 width={300}
                 height={300}
-                alt="sexed"
+                alt="Cześć Ciało"
               />
             </Link>
           </div>
           <div className="imglinks-box-slot">
-            <Link href="https://alefundacja.pl/" target="_blank">
+            <Link href="https://rozowaskrzyneczka.pl/" target="_blank">
               <Image
-                src={aleImg.src}
+                src={rozowaSkrzyneczka.src}
                 loading="lazy"
                 width={300}
                 height={300}
-                alt="sexed"
+                alt="Różowa Skrzyneczka"
+              />
+            </Link>
+          </div>
+          <div className="imglinks-box-slot">
+            <Link href="https://poledialogu.org.pl/" target="_blank">
+              <Image
+                src={poleDialogu.src}
+                loading="lazy"
+                width={300}
+                height={300}
+                alt="Fundacja Pole Dialogu"
               />
             </Link>
           </div>
