@@ -61,7 +61,7 @@ const AboutMe = () => {
                   >
                     @czytam_przedseksem
                   </Link>
-                </strong>
+                </strong>{" "}
                 ,gdzie polecam książki związane z tematyką seksualności.
               </p>
             </div>
