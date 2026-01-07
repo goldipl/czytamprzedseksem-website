@@ -38,18 +38,21 @@ const AboutMe = () => {
             <div className="text-box-slot">
               <p>
                 Prowadzę zajęcia w szkołach podstawowych oraz w liceach w ramach
-                przedmiotu <strong>wychowanie do życia w rodzinie</strong> bądź
-                jako zajęcia dodatkowe. Starannie selekcjonuję materiały, sam
-                tworzę własne, jestem autorem scenariuszy zajęć. Prowadzę też
-                szkolenia o seksualności dzieci i młodzieży dla rodziców i kadr
-                pedagogicznych.
+                przedmiotu{" "}
+                <strong>
+                  edukacja zdrowotna (poprzednio wychowanie do życia w rodzinie)
+                </strong>{" "}
+                bądź jako zajęcia dodatkowe. Starannie selekcjonuję materiały,
+                sam tworzę własne, jestem autorem scenariuszy zajęć. Prowadzę
+                też szkolenia o seksualności dzieci i młodzieży dla rodziców i
+                kadr pedagogicznych.
               </p>
             </div>
             <div className="text-box-slot">
               <p>
-                Pracuję w Fundacji Szkoła z Klasą, gdzie wspieram działania
+                Pracuję w Fundacji SEXEDPL skąd wspieram działania
                 nauczycielskie, realizując projekty podejmujące temat
-                bezpieczeństwa w sieci i migracji. Prowadzę profil dla osób
+                seksualności dzieci i młodzieży. Prowadzę profil dla osób
                 dorosłych na instagramie:{" "}
                 <strong>
                   <Link
@@ -59,7 +62,7 @@ const AboutMe = () => {
                     @czytam_przedseksem
                   </Link>
                 </strong>
-                , gdzie polecam książki związane z tematyką seksualności.
+                ,gdzie polecam książki związane z tematyką seksualności.
               </p>
             </div>
           </div>
