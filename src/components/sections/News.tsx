@@ -9,6 +9,9 @@ import newsImg05 from "./../../../public/img/news/czy-edukacja-zdrowotna-bedzie-
 import newsImg06 from "./../../../public/img/news/rozpoznawanie-wlasnych-granic-i-umiejetnosc-ich-egzekwowania.jpg";
 import GoldShapeCooperation01 from "./../../../public/shapes/gold-on-brown-shape01.jpg";
 import GoldShapeCooperation02 from "./../../../public/shapes/gold-on-brown-shape02.jpg";
+import newsImg07 from "./../../../public/img/news/cialo-to-nie-tabu-to-rzeczywistosc.jpg";
+import newsImg08 from "./../../../public/img/news/jak-wyglada-dojrzewanie-sexed.jpg";
+import newsImg09 from "./../../../public/img/news/eksperci-obalaja-mity-na-temat-hpv.jpg";
 
 const News = () => {
   return (
@@ -32,6 +35,65 @@ const News = () => {
           alt="Złoty kształt"
         />
         <div className="news-box">
+          <div className="news-box-slot">
+            <Link
+              href="https://www.youtube.com/watch?v=ItWa17-zb2o"
+              target="_blank"
+            >
+              <Image
+                src={newsImg09.src}
+                loading="lazy"
+                width={600}
+                height={315}
+                alt="Kiedy najlepiej szczepić przeciw HPV? `Zaszczepiłam syna jak miał 13 lat`"
+              />
+              <div className="news-box-slot__title">
+                <h3>
+                  Kiedy najlepiej szczepić przeciw HPV? `Zaszczepiłam syna jak
+                  miał 13 lat`
+                </h3>
+              </div>
+            </Link>
+          </div>
+          <div className="news-box-slot">
+            <Link
+              href="https://www.youtube.com/watch?v=QBFsc7Ev3nw"
+              target="_blank"
+            >
+              <Image
+                src={newsImg08.src}
+                loading="lazy"
+                width={600}
+                height={315}
+                alt="Jak wygląda dojrzewanie? - Hubert Pajączkowski | SEXEDPL"
+              />
+              <div className="news-box-slot__title">
+                <h3>
+                  Jak wygląda dojrzewanie? - Hubert Pajączkowski | SEXEDPL
+                </h3>
+              </div>
+            </Link>
+          </div>
+          <div className="news-box-slot">
+            <Link
+              href="https://www.youtube.com/watch?v=Ci-cJAWg7ss"
+              target="_blank"
+            >
+              <Image
+                src={newsImg07.src}
+                loading="lazy"
+                width={600}
+                height={315}
+                alt="Hubert Pajączkowski, Wojtek Papuziński: Ciało to nie tabu – to rzeczywistość [PODCAST]"
+              />
+              <div className="news-box-slot__title">
+                <h3>
+                  Hubert Pajączkowski, Wojtek Papuziński: Ciało to nie tabu – to
+                  rzeczywistość [PODCAST]
+                </h3>
+              </div>
+            </Link>
+          </div>
           <div className="news-box-slot">
             <Link
               href="https://www.youtube.com/watch?v=QBFsc7Ev3nw"
