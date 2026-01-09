@@ -1,37 +1,40 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo from "./../../../public/icons/header/logo.svg";
 import menuDownIcon from "./../../../public/icons/header/menu-down-icon.svg";
 import Image from "next/image";
 
 const Header = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [openHamburger, setOpenHamburger] = useState(false);
 
-  const handleDropdownToggle = (dropdown: any) => {
+  const headerRef = useRef<HTMLDivElement | null>(null);
+
+  const handleDropdownToggle = (dropdown: string) => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
   };
 
   const addBlockedWindow = () => {
     document.body.classList.add("blocked-body");
-    document.getElementsByTagName("html")[0].classList.add("blocked-body");
+    document.documentElement.classList.add("blocked-body");
   };
 
   const removeBlockedWindow = () => {
     document.body.classList.remove("blocked-body");
-    document.getElementsByTagName("html")[0].classList.remove("blocked-body");
+    document.documentElement.classList.remove("blocked-body");
   };
 
   const handleCloseDropdown = () => {
     setActiveDropdown(null);
-    removeBlockedWindow();
     setOpenHamburger(false);
+    removeBlockedWindow();
   };
 
   const handleHamburgerMenu = () => {
     setOpenHamburger((prev) => !prev);
   };
 
+  /** Lock body scroll on mobile menu */
   useEffect(() => {
     if (openHamburger) {
       addBlockedWindow();
@@ -40,8 +43,27 @@ const Header = () => {
     }
   }, [openHamburger]);
 
+  /** Close dropdown when clicking outside (desktop only) */
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        window.innerWidth > 992 &&
+        headerRef.current &&
+        !headerRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="header">
+    <div className="header" ref={headerRef}>
       <div className="header-wrapper">
         <div className="header-wrapper__logo">
           <Link href="/">
@@ -53,6 +75,7 @@ const Header = () => {
             />
           </Link>
         </div>
+
         <div
           className={`hamburger ${openHamburger ? "open" : ""}`}
           onClick={handleHamburgerMenu}
@@ -64,6 +87,7 @@ const Header = () => {
           <span className="hamburger-line"></span>
           <span className="hamburger-line"></span>
         </div>
+
         <nav className={`header-wrapper__nav ${openHamburger ? "open" : ""}`}>
           <ul className="nav-first-lvl">
             <li className="nav-expand">
@@ -102,6 +126,7 @@ const Header = () => {
                 </li>
               </ul>
             </li>
+
             <li className="nav-expand">
               <span onClick={() => handleDropdownToggle("secondDropdown")}>
                 Szkolenia
@@ -130,6 +155,7 @@ const Header = () => {
                 </li>
               </ul>
             </li>
+
             <li>
               <Link href="#konsultacje" onClick={handleCloseDropdown}>
                 Konsultacje
