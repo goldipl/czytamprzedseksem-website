@@ -57,7 +57,7 @@ const News = () => {
           </div>
           <div className="news-box-slot">
             <Link
-              href="https://www.youtube.com/watch?v=QBFsc7Ev3nw"
+              href="https://www.youtube.com/watch?v=6OY9AhPewzs"
               target="_blank"
             >
               <Image
