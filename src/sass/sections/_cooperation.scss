@@ -1,58 +1,38 @@
-.cooperation-section {
-  background-color: $main-bg-color01;
-  height: auto;
-  padding: 140px 0;
-  &-wrapper {
-    position: relative;
-    max-width: calc(1280px - 160px);
+.partners {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid $rule;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: $burgundy;
+    }
+  }
+
+  img {
     width: 100%;
-    margin: 0 auto;
-    h2 {
-      color: $text-primary-color01;
-      font-size: 40px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-      text-align: center;
-      margin: 0 0 64px 0;
-    }
-    .golden-shape-aboutme01 {
-      position: absolute;
-      bottom: -180px;
-      left: -340px;
-      z-index: 0;
-    }
-    .golden-shape-aboutme02 {
-      position: absolute;
-      top: -278px;
-      right: -160px;
-      z-index: 0;
-      transform: rotate(-90deg);
-    }
+    height: 100%;
+    object-fit: contain;
   }
 }
 
-@media (max-width: 960px) {
-  .cooperation-section {
-    padding: 64px 0;
-    &-wrapper {
-      max-width: unset;
-      width: calc(100% - 32px);
-      margin: 0 16px;
-      h2 {
-        font-size: 28px;
-        margin: 0 0 40px 0;
-      }
-      .golden-shape-aboutme01 {
-        bottom: -104px;
-        left: -40px;
-        opacity: 0.85;
-      }
-      .golden-shape-aboutme02 {
-        top: -235px;
-        right: -80px;
-        height: auto;
-        width: 80px;
-      }
+@media (max-width: $bp-md) {
+  .partners {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+
+    a {
+      padding: 12px;
     }
   }
 }

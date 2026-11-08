@@ -1,0 +1,50 @@
+.about {
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 40px clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+
+  &__media img {
+    aspect-ratio: 4 / 5;
+    object-position: 64% 40%;
+  }
+
+  h2 {
+    margin-bottom: 28px;
+    font-size: clamp(2.125rem, 4.2vw, 3.25rem);
+    color: $burgundy;
+  }
+
+  .prose {
+    font-size: 1.125rem;
+  }
+
+  .facts {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $bp-md + 1) {
+  .about__media {
+    position: sticky;
+    top: $header-h + 32px;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .about {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__media {
+      max-width: 440px;
+    }
+
+    .prose {
+      font-size: 1.0625rem;
+    }
+  }
+}

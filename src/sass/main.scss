@@ -1,28 +1,20 @@
-// Global styles
-@import "./global/fonts";
+// Global
 @import "./global/variables";
 @import "./global/reset";
 @import "./global/global";
 
-// Mixins
-@import "./mixins/nav-link-mixin";
-
-// Common styles
+// Common
+@import "./common/layout";
+@import "./common/buttons";
 @import "./common/header";
 @import "./common/footer";
-@import "./common/buttons";
-@import "./common/textbox";
-@import "./common/listings";
-@import "./common/hamburger";
 
 // Sections
 @import "./sections/hero";
-@import "./sections/about_me";
-@import "./sections/news";
 @import "./sections/workshops";
-@import "./sections/primary_school";
-@import "./sections/high_school";
+@import "./sections/program";
 @import "./sections/courses";
+@import "./sections/projects";
+@import "./sections/about";
 @import "./sections/cooperation";
 @import "./sections/contact";
-@import "./sections/shorts_box";

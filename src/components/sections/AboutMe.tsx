@@ -1,74 +1,71 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import AboutMeImg from "./../../../public/img/hubert/hubert02.jpg";
-import BrownShapeNews01 from "./../../../public/shapes/brown-on-gold-shape01.jpg";
-import BrownShapeNews02 from "./../../../public/shapes/brown-on-gold-shape03.jpg";
+import AboutMeImg from "./../../../public/img/hubert/hubert03.jpg";
 
 const AboutMe = () => {
   return (
-    <section id="o-mnie" className="aboutme-section">
-      <div className="aboutme-section-wrapper">
-        <Image
-          className="brown-shape-news01"
-          src={BrownShapeNews01.src}
-          loading="lazy"
-          width={173}
-          height={500}
-          alt="Brązowy kształt"
-        />
-        <Image
-          className="brown-shape-news02"
-          src={BrownShapeNews02.src}
-          loading="lazy"
-          width={524}
-          height={484}
-          alt="Brązowy kształt"
-        />
-        <h2>O mnie</h2>
-        <div className="img-text-wrapper">
-          <div className="text-box">
-            <div className="text-box-slot">
-              <p>
-                Jestem <strong>edukatorem seksualnym</strong>, absolwentem
-                kierunku seksuologia praktyczna, koordynatorem projektów
-                edukacyjnych, obecnie także w trakcie studiów psychologicznych.
-              </p>
-            </div>
-            <div className="text-box-slot">
-              <p>
-                Prowadzę zajęcia w szkołach podstawowych oraz w liceach w ramach
-                przedmiotu{" "}
-                <strong>
-                  edukacja zdrowotna (poprzednio wychowanie do życia w rodzinie)
-                </strong>{" "}
-                bądź jako zajęcia dodatkowe. Starannie selekcjonuję materiały,
-                sam tworzę własne, jestem autorem scenariuszy zajęć. Prowadzę
-                też szkolenia o seksualności dzieci i młodzieży dla rodziców i
-                kadr pedagogicznych.
-              </p>
-            </div>
-            <div className="text-box-slot">
-              <p>
-                Pracuję w Fundacji SEXEDPL skąd wspieram działania
-                nauczycielskie, realizując projekty podejmujące temat
-                seksualności dzieci i młodzieży. Prowadzę profil dla osób
-                dorosłych na instagramie:{" "}
-                <strong>
-                  <Link
-                    href="https://www.instagram.com/czytam_przedseksem/"
-                    target="_blank"
-                  >
-                    @czytam_przedseksem
-                  </Link>
-                </strong>{" "}
-                ,gdzie polecam książki związane z tematyką seksualności.
-              </p>
-            </div>
+    <section id="o-mnie" className="section section--paper about">
+      <div className="container about__grid">
+        <figure className="photo about__media">
+          <Image
+            src={AboutMeImg}
+            loading="lazy"
+            sizes="(max-width: 860px) 440px, 40vw"
+            alt="Hubert Pajączkowski prowadzi zajęcia na świeżym powietrzu, pokazując ilustrację"
+          />
+        </figure>
+
+        <div>
+          <p className="kicker">O mnie</p>
+          <h2>Hubert Pajączkowski</h2>
+          <div className="prose">
+            <p>
+              Jestem <strong>edukatorem seksualnym</strong>, absolwentem
+              kierunku seksuologia praktyczna, koordynatorem projektów
+              edukacyjnych, obecnie także w trakcie studiów psychologicznych.
+            </p>
+            <p>
+              Prowadzę zajęcia w szkołach podstawowych oraz w liceach w ramach
+              przedmiotu{" "}
+              <strong>
+                edukacja zdrowotna (poprzednio wychowanie do życia w rodzinie)
+              </strong>{" "}
+              bądź jako zajęcia dodatkowe. Starannie selekcjonuję materiały,
+              sam tworzę własne, jestem autorem scenariuszy zajęć. Prowadzę też
+              szkolenia o seksualności dzieci i młodzieży dla rodziców i kadr
+              pedagogicznych.
+            </p>
+            <p>
+              Pracuję w Fundacji SEXEDPL, skąd wspieram działania
+              nauczycielskie, realizując projekty podejmujące temat seksualności
+              dzieci i młodzieży. Prowadzę profil dla osób dorosłych na
+              Instagramie{" "}
+              <Link
+                href="https://www.instagram.com/czytam_przedseksem/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @czytam_przedseksem
+              </Link>
+              , gdzie polecam książki związane z tematyką seksualności.
+            </p>
           </div>
-          <div className="img-box">
-            <Image src={AboutMeImg.src} alt="O mnie" width={240} height={240} />
-          </div>
+
+          <dl className="facts">
+            <div>
+              <dt>Wykształcenie</dt>
+              <dd>seksuologia praktyczna; w trakcie studiów psychologicznych</dd>
+            </div>
+            <div>
+              <dt>Praca</dt>
+              <dd>Fundacja SEXEDPL — projekty edukacyjne</dd>
+            </div>
+            <div>
+              <dt>Autor</dt>
+              <dd>scenariuszy i materiałów do zajęć</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>

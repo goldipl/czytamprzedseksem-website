@@ -1,35 +1,64 @@
-.button01 {
-  display: flex;
-  position: relative;
-  padding: 8px 32px;
-  appearance: none;
-  background: transparent;
-  color: $main-bg-color01;
-  text-transform: none;
-  letter-spacing: 0.15em;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.8s ease;
-  text-decoration: none;
-  width: max-content;
-  font-size: 14px;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-family: $font-sans;
+  font-size: 1rem;
   font-weight: 600;
-  border-radius: 24px;
-  transition: 0.6s;
-  background: linear-gradient(
-    90deg,
-    $main-bg-color02 15.1%,
-    $main-bg-color02opacity08 85.42%
-  );
-  border: 1px solid $transparent;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
 
-  &:hover {
-    background: linear-gradient(
-      180deg,
-      $main-bg-color02 15.1%,
-      $main-bg-color02opacity08 85.42%
-    );
-    letter-spacing: 0.2em;
+  &__arrow {
+    transition: transform 0.2s ease;
+  }
+
+  &:hover &__arrow {
+    transform: translateX(3px);
+  }
+
+  &--primary {
+    background-color: $burgundy;
+    color: $cream;
+
+    &:hover {
+      background-color: $burgundy-dark;
+    }
+  }
+
+  &--outline {
+    border-color: $rule-strong;
+    color: $ink;
+
+    &:hover {
+      border-color: $ink;
+      background-color: rgba(36, 24, 22, 0.04);
+    }
+  }
+
+  &--outline-light {
+    border-color: rgba(246, 236, 217, 0.5);
+    color: $cream;
+
+    &:hover {
+      border-color: $cream;
+      background-color: rgba(246, 236, 217, 0.08);
+    }
+  }
+
+  &--gold {
+    background-color: $gold;
+    color: $burgundy-ink;
+
+    &:hover {
+      background-color: $gold-hover;
+    }
   }
 }

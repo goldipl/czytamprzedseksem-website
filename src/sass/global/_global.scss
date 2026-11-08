@@ -1,22 +1,75 @@
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-html,
-body {
-  overflow-x: hidden;
+html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+
   &.blocked-body {
     overflow: hidden;
   }
 }
 
 body {
-  background-color: $white-bg-color;
-  section {
-    h2 {
-      position: relative;
-      z-index: 1;
-    }
+  background-color: $paper;
+  color: $ink;
+  font-family: $font-sans;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  // `clip` (not `hidden`) so the sticky header keeps working
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  &.blocked-body {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+}
+
+[id] {
+  scroll-margin-top: $header-h + 16px;
+}
+
+:focus-visible {
+  outline: 2px solid $burgundy;
+  outline-offset: 3px;
+}
+
+.section--burgundy :focus-visible,
+.header :focus-visible {
+  outline-color: $gold;
+}
+
+::selection {
+  background: $gold;
+  color: $burgundy-ink;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }

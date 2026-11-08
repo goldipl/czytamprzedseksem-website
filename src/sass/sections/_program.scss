@@ -1,0 +1,106 @@
+// Topic lists for primary & high school workshops
+.topics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 64px;
+  list-style: none;
+}
+
+.topic {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 0 16px;
+  padding: 28px 0 36px;
+  border-top: 1px solid $rule;
+
+  &__num {
+    padding-top: 7px;
+    font-family: $font-serif;
+    font-size: 1rem;
+    font-variant-numeric: tabular-nums;
+    color: $burgundy;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: $ink;
+  }
+
+  p {
+    color: $ink-soft;
+
+    & + p {
+      margin-top: 0.75em;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+    color: $ink;
+  }
+}
+
+.program__more {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 0 16px;
+  padding-top: 28px;
+  border-top: 1px solid $rule;
+
+  &-label {
+    grid-column: 2;
+    margin-bottom: 6px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $burgundy;
+  }
+
+  p:last-child {
+    grid-column: 2;
+    max-width: 70ch;
+    color: $ink-soft;
+  }
+}
+
+// Dark variant
+.section--burgundy {
+  .topic {
+    border-color: $rule-light;
+
+    &__num {
+      color: $gold;
+    }
+
+    h3,
+    strong {
+      color: $cream;
+    }
+
+    p {
+      color: $cream-soft;
+    }
+  }
+}
+
+@media (max-width: $bp-md) {
+  .topics {
+    grid-template-columns: 1fr;
+  }
+
+  .topic,
+  .program__more {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0 12px;
+  }
+
+  .topic {
+    padding: 22px 0 26px;
+
+    h3 {
+      font-size: 1.3125rem;
+    }
+  }
+}

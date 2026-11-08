@@ -1,81 +1,80 @@
-.contact-section {
-  background-color: $main-bg-color02;
-  height: auto;
-  padding: 100px 0;
-  &-wrapper {
-    position: relative;
-    max-width: calc(1280px - 160px);
-    width: 100%;
-    margin: 0 auto;
-    h2 {
-      color: $text-secondary-color01;
-      font-size: 40px;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-      text-align: center;
-      margin: 0 0 64px 0;
-    }
-    .social-links {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      &-slot {
-        > a {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          margin: 0 0 24px 0;
-          text-decoration: none;
-          &:hover {
-            span {
-              color: $text-secondary-color02;
-            }
-          }
-          img {
-            display: flex;
-            margin: 0 24px 0 0;
-            object-fit: contain;
-            border-radius: 100%;
-          }
-          span {
-            font-size: 24px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: $text-secondary-color01;
-          }
+.contact {
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 40px clamp(40px, 6vw, 96px);
+    align-items: end;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 5.4vw, 4rem);
+    line-height: 1.05;
+    color: $cream;
+  }
+
+  &__lead {
+    max-width: 48ch;
+    font-size: 1.125rem;
+    color: $cream-soft;
+  }
+
+  &__links {
+    list-style: none;
+    border-bottom: 1px solid $rule-light;
+
+    a {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 4px 16px;
+      align-items: end;
+      padding: 24px 0;
+      border-top: 1px solid $rule-light;
+      color: $cream;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $gold;
+
+        .contact__arrow {
+          transform: translate(3px, -3px);
         }
       }
     }
   }
+
+  &__label {
+    grid-column: 1 / -1;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $gold;
+  }
+
+  &__value {
+    font-family: $font-serif;
+    font-size: clamp(1.25rem, 2.6vw, 1.875rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  &__arrow {
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
 }
 
-@media (max-width: 960px) {
-  .contact-section {
-    padding: 64px 0;
-    &-wrapper {
-      max-width: unset;
-      width: calc(100% - 32px);
-      margin: 0 16px;
-      h2 {
-        font-size: 28px;
-        margin: 0 0 40px 0;
-      }
-      .social-links {
-        &-slot {
-          > a {
-            img {
-              width: 36px;
-              height: auto;
-              margin: 0 8px 0 0;
-            }
-            span {
-              font-size: 15px;
-            }
-          }
-        }
-      }
+@media (max-width: $bp-md) {
+  .contact {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__lead {
+      font-size: 1.0625rem;
     }
   }
 }

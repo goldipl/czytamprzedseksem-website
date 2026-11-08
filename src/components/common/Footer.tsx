@@ -6,14 +6,14 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="footer-wrapper">
-        <p>Czytam przed seksem - Hubert Pajączkowski © {currentYear}</p>
-        <span>
-          Projekt i realizacja:
+      <div className="container footer__inner">
+        <p>© {currentYear} Czytam przed seksem — Hubert Pajączkowski</p>
+        <p>
+          Projekt i realizacja:{" "}
           <Link href="https://mgodlewskidev.pl/" target="_blank">
             mgodlewskidev.pl
           </Link>
-        </span>
+        </p>
       </div>
     </div>
   );

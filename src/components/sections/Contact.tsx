@@ -1,52 +1,51 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import mailImg from "./../../../public/img/contact/email.jpg";
-import instagramImg from "./../../../public/img/contact/instagram.jpg";
+
+const LINKS = [
+  {
+    label: "E-mail",
+    value: "hubertpajaczkowski@gmail.com",
+    href: "mailto:hubertpajaczkowski@gmail.com",
+  },
+  {
+    label: "Instagram",
+    value: "@czytam_przedseksem",
+    href: "https://www.instagram.com/czytam_przedseksem/",
+  },
+];
 
 const Contact = () => {
   return (
-    <section id="skontaktuj-sie" className="contact-section">
-      <div className="contact-section-wrapper">
-        <h2>Skontaktuj się</h2>
-        <div className="social-links">
-          <div className="social-links-slot">
-            <Link
-              href="mailto:hubertpajaczkowski@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="social-links-slot__icon"
-                src={mailImg.src}
-                loading="lazy"
-                alt="e-mail"
-                width={64}
-                height={64}
-              />
-              <span className="social-links-slot__text">
-                hubertpajaczkowski@gmail.com
-              </span>
-            </Link>
-          </div>
-          <div className="social-links-slot">
-            <Link
-              href="https://www.instagram.com/czytam_przedseksem/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="social-links-slot__icon"
-                src={instagramImg.src}
-                loading="lazy"
-                alt="instagram"
-                width={64}
-                height={64}
-              />
-              <span className="social-links-slot__text">CZYTAMPRZEDSEKSEM</span>
-            </Link>
-          </div>
+    <section id="skontaktuj-sie" className="section section--burgundy contact">
+      <div className="container contact__grid">
+        <div>
+          <p className="kicker">Kontakt</p>
+          <h2>Skontaktuj się</h2>
+          <p className="contact__lead">
+            Napisz, jeśli chcesz zaprosić mnie do swojej szkoły lub placówki
+            albo umówić konsultację indywidualną. Pełną ofertę cenową
+            przygotowuję indywidualnie.
+          </p>
         </div>
+
+        <ul className="contact__links">
+          {LINKS.map((link) => (
+            <li key={link.label}>
+              <Link
+                href={link.href}
+                {...(link.href.startsWith("http")
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
+                <span className="contact__label">{link.label}</span>
+                <span className="contact__value">{link.value}</span>
+                <span className="contact__arrow" aria-hidden="true">
+                  ↗
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

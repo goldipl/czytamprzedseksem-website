@@ -1,24 +1,31 @@
-$color-white: #ffffff;
-$color-black: #000000;
-$color-black02: #0000008c;
+// Brand — taken directly from the logo
+$burgundy: #970a12;
+$burgundy-dark: #7a080e;
+$burgundy-ink: #4a0509;
+$gold: #fbd980;
+$gold-hover: #f6cb5f;
 
-$white-bg-color: #ffffff;
-$main-bg-color01: #970a12;
-$main-bg-color01opacity07: #970a11af;
-$main-bg-color01opacity08: #a31c23d7;
-$main-bg-color04: #a5282e;
-$main-bg-color02: #fed67f;
-$main-bg-color02opacity07: #ecc46ea8;
-$main-bg-color02opacity08: #f7d283e0;
-$main-bg-color03: #f7d283;
+// Neutrals — warm "paper & ink"
+$paper: #faf6ef;
+$sand: #f2eadc;
+$ink: #241816;
+$ink-soft: #5b4b46;
+$cream: #f6ecd9;
+$cream-soft: rgba(246, 236, 217, 0.8);
 
-$text-primary-color01: #fbd980;
-$text-primary-color02: #e9dab4;
-$text-primary-color03: #e4b84b;
-$text-secondary-color01: #970a12;
-$text-secondary-color02: #c03038;
+$rule: rgba(36, 24, 22, 0.14);
+$rule-strong: rgba(36, 24, 22, 0.32);
+$rule-light: rgba(251, 217, 128, 0.24);
 
-$border-color01: #970a12;
-$border-color02: #f8e7bc;
+// Type
+$font-serif: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+$font-sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto,
+  sans-serif;
 
-$transparent: rgba(255, 255, 255, 0);
+// Layout
+$container: 1200px;
+$header-h: 72px;
+
+$bp-lg: 1140px; // keep in sync with DESKTOP_BP in Header.tsx
+$bp-md: 860px;
+$bp-sm: 560px;

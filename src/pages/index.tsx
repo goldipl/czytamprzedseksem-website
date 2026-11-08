@@ -15,7 +15,7 @@ import Contact from "@/components/sections/Contact";
 const index = () => {
   return (
     <>
-      <header>
+      <header className="site-header">
         <Header />
       </header>
       <main>

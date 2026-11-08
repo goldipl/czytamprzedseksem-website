@@ -1,78 +1,80 @@
 import React from "react";
-import Image from "next/image";
-import BrownShapePrimarySchoolWorkshop01 from "./../../../public/shapes/brown-on-gold-shape03.jpg";
+import TopicList, { Topic } from "@/components/common/TopicList";
+
+const TOPICS: Topic[] = [
+  {
+    title: "Emocje",
+    body: (
+      <p>
+        Rozpoznawanie i nazywanie odczuć, radzenie sobie z problemami,
+        umiejętność szukania pomocy i wsparcia.
+      </p>
+    ),
+  },
+  {
+    title: "Dojrzewanie – zmiany w ciele",
+    body: (
+      <>
+        <p>
+          Poznanie zmian, przez które przechodzą dorastające osoby.
+          Zrozumienie, że każdy dojrzewa w indywidualnym tempie. Dbanie o
+          higienę ciała i umysłu.
+        </p>
+        <p>
+          <strong>Dojrzewanie z podziałem na grupy</strong> – pogłębienie
+          tematów realizowanych wspólnie z całą klasą.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Zapłodnienie i ciąża",
+    body: (
+      <p>
+        Zrozumienie, na czym polegają zapłodnienie i ciąża oraz jakie są jej
+        pierwsze symptomy.
+      </p>
+    ),
+  },
+  {
+    title: "Stereotypy płciowe",
+    body: (
+      <p>
+        Poznanie, czym są stereotypy, zauważenie tego, jak mogą oddziaływać na
+        nasze życie, zrozumienie, że każdy człowiek to dużo więcej niż tylko
+        to, co widać na pierwszy rzut oka.
+      </p>
+    ),
+  },
+];
 
 const PrimarySchoolWorkshops = () => {
   return (
-    <section id="dla-szkol-podstawowych" className="primaryschool-section">
-      <div className="primaryschool-section-wrapper">
-        <h2>Dla szkół podstawowych</h2>
-        <Image
-          className="golden-shape-workshops01"
-          src={BrownShapePrimarySchoolWorkshop01.src}
-          loading="lazy"
-          width={224}
-          height={300}
-          alt="Miedziany kształt"
-        />
-        <Image
-          className="golden-shape-workshops02"
-          src={BrownShapePrimarySchoolWorkshop01.src}
-          loading="lazy"
-          width={224}
-          height={300}
-          alt="Miedziany kształt"
-        />
-        <div className="vert-box">
-          <div className="vert-box-slot">
-            <h4>
-              <strong>Emocje</strong>
-            </h4>
-            <p>
-              rozpoznawanie i nazywanie odczuć, radzenie sobie z problemami,
-              umiejętność szukania pomocy i wsparcia
-            </p>
+    <section
+      id="dla-szkol-podstawowych"
+      className="section section--paper program"
+    >
+      <div className="container">
+        <div className="section-head">
+          <div>
+            <p className="kicker">Warsztaty</p>
+            <h2>Dla szkół podstawowych</h2>
           </div>
-          <div className="vert-box-slot">
-            <h4>
-              <strong>Dojrzewanie - zmiany w ciele</strong>
-            </h4>
-            <p>
-              poznanie zmian, przez które przechodzą dorastające osoby.
-              Zrozumienie, że każdy dojrzewa w indywidualnym tempie. Dbanie o
-              higienę ciała i umysłu.
-            </p>
-            <p>
-              <strong>Dojrzewanie z podziałem na grupy</strong> - pogłębienie
-              tematów realizowanych wspólnie z całą klasą.
-            </p>
-          </div>
-          <div className="vert-box-slot">
-            <h4>
-              <strong>Zapłodnienie i ciąża</strong>
-            </h4>
-            <p>
-              zrozumienie, na czym polegają zapłodnienie i ciąża oraz jakie są
-              jej pierwsze symptomy.
-            </p>
-          </div>
-          <div className="vert-box-slot">
-            <h4>
-              <strong>Stereotypy płciowe</strong>
-            </h4>
-            <p>
-              poznanie czym są stereotypy, zauważenie tego jak mogą oddziaływać
-              na nasze życie, zrozumienie, że każdy człowiek to dużo więcej niż
-              tylko to, co widać na pierwszy rzut oka.
-            </p>
-          </div>
-          <div className="vert-box-slot">
-            <p>
-              Zagadnienia związane z budowaniem relacji, pierwszymi
-              zakochaniami, stawianiem granic, tożsamością płciową i seksualną,
-              korzystaniem z internetu i pornografią.
-            </p>
-          </div>
+          <p className="section-head__lead">
+            Zajęcia w ramach przedmiotu edukacja zdrowotna lub jako zajęcia
+            dodatkowe.
+          </p>
+        </div>
+
+        <TopicList topics={TOPICS} />
+
+        <div className="program__more">
+          <p className="program__more-label">Ponadto</p>
+          <p>
+            Zagadnienia związane z budowaniem relacji, pierwszymi zakochaniami,
+            stawianiem granic, tożsamością płciową i seksualną, korzystaniem z
+            internetu i pornografią.
+          </p>
         </div>
       </div>
     </section>

@@ -52,6 +52,17 @@ class MyDocument extends Document {
           />
           <meta name="twitter:image" content="/img/hubert/hubert02.jpg" />
           <meta name="robots" content="index, follow" />
+          <meta name="theme-color" content="#970a12" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+          />
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/favicon.ico" />
           <title>Czytam przed seksem - Hubert Pajączkowski</title>
