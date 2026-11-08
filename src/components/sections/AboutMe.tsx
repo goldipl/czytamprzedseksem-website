@@ -22,8 +22,8 @@ const AboutMe = () => {
           <div className="prose">
             <p>
               Jestem <strong>edukatorem seksualnym</strong>, absolwentem
-              kierunku seksuologia praktyczna, koordynatorem projektów
-              edukacyjnych, obecnie także w trakcie studiów psychologicznych.
+              kierunku seksuologia praktyczna, magistrem psychologii oraz
+              koordynatorem projektów edukacyjnych.
             </p>
             <p>
               Prowadzę zajęcia w szkołach podstawowych oraz w liceach w ramach
@@ -55,7 +55,7 @@ const AboutMe = () => {
           <dl className="facts">
             <div>
               <dt>Wykształcenie</dt>
-              <dd>seksuologia praktyczna; w trakcie studiów psychologicznych</dd>
+              <dd>seksuologia praktyczna; magister psychologii</dd>
             </div>
             <div>
               <dt>Praca</dt>
