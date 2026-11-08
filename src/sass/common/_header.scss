@@ -127,11 +127,46 @@
     }
   }
 
-  &__cta {
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin-left: 16px;
+  }
+
+  &__cta {
     min-height: 40px;
     padding: 0 18px;
     font-size: 0.9375rem;
+  }
+
+  &__social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $rule-light;
+    border-radius: 2px;
+    color: $cream;
+    transition: color 0.2s ease, border-color 0.2s ease,
+      background-color 0.2s ease;
+
+    &:hover {
+      color: $gold;
+      border-color: $gold;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $gold;
+      outline-offset: 2px;
+    }
+  }
+
+  &__social-icon {
+    width: 20px;
+    height: 20px;
   }
 
   &__toggle {
@@ -274,8 +309,13 @@
       }
     }
 
-    &__cta {
+    &__actions {
       margin: 32px 0 0;
+      gap: 12px;
+    }
+
+    &__cta {
+      flex: 1;
       min-height: 52px;
       font-size: 1rem;
       background-color: $burgundy;
@@ -284,6 +324,28 @@
       &:hover {
         background-color: $burgundy-dark;
       }
+    }
+
+    &__social {
+      width: 52px;
+      height: 52px;
+      border-color: $rule-strong;
+      color: $burgundy;
+
+      &:hover {
+        color: $burgundy-dark;
+        border-color: $burgundy;
+        background-color: rgba(151, 10, 18, 0.06);
+      }
+
+      &:focus-visible {
+        outline-color: $burgundy;
+      }
+    }
+
+    &__social-icon {
+      width: 24px;
+      height: 24px;
     }
   }
 }

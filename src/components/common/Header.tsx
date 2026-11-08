@@ -33,6 +33,25 @@ const NAV: NavItem[] = [
   { id: "o-mnie", label: "O mnie", href: "#o-mnie" },
 ];
 
+const INSTAGRAM_URL = "https://www.instagram.com/czytam_przedseksem/";
+
+const InstagramIcon = () => (
+  <svg
+    className="header__social-icon"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.75"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" stroke="none" />
+  </svg>
+);
+
 const Chevron = () => (
   <svg
     className="header__chevron"
@@ -162,13 +181,26 @@ const Header = () => {
               )
             )}
           </ul>
-          <Link
-            href="#skontaktuj-sie"
-            className="btn btn--gold header__cta"
-            onClick={closeAll}
-          >
-            Skontaktuj się
-          </Link>
+          <div className="header__actions">
+            <Link
+              href="#skontaktuj-sie"
+              className="btn btn--gold header__cta"
+              onClick={closeAll}
+            >
+              Skontaktuj się
+            </Link>
+            <Link
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header__social"
+              aria-label="Instagram @czytam_przedseksem (otwiera się w nowej karcie)"
+              title="Instagram @czytam_przedseksem"
+              onClick={closeAll}
+            >
+              <InstagramIcon />
+            </Link>
+          </div>
         </nav>
       </div>
     </div>
