@@ -1,6 +1,7 @@
 import Header from "@/components/common/Header";
 import Hero from "@/components/sections/Hero";
 import React from "react";
+import Head from "next/head";
 import "@/sass/main.scss";
 import Footer from "@/components/common/Footer";
 import News from "@/components/sections/News";
@@ -15,6 +16,9 @@ import Contact from "@/components/sections/Contact";
 const index = () => {
   return (
     <>
+      <Head>
+        <title>Czytam przed seksem - Hubert Pajączkowski</title>
+      </Head>
       <header className="site-header">
         <Header />
       </header>
