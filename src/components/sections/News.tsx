@@ -13,6 +13,9 @@ import newsImg09 from "./../../../public/img/news/eksperci-obalaja-mity-na-temat
 import newsImg10 from "./../../../public/img/news/jak-dojrzewaja-chlopcy.jpg";
 import newsImg11 from "./../../../public/img/news/edukacja-zdrowotna-w-szkolach-czego-obawiaja-sie-rodzice.jpg";
 import newsImg12 from "./../../../public/img/news/gdzie-konczy-sie-flirt-a-zaczyna-molestowanie.jpg";
+import newsImg13 from "./../../../public/img/news/lekcje-bez-tabu-program-ambasadorski.jpg";
+import newsImg14 from "./../../../public/img/news/edukacja-zdrowotna-bez-komponentu-o-zdrowiu-seksualnym.jpg";
+import newsImg15 from "./../../../public/img/news/seksualizacja-nastolatek-w-popkulturze.jpg";
 
 type Project = {
   href: string;
@@ -32,11 +35,27 @@ const PROJECT_LIST: Project[] = [
     date: "2026-11-06",
   },
   {
+    href: "https://sexed.pl/projekt-regulaminu-rekrutacji-i-uczestnictwa-w-programie-ambasadorskim-lekcje-bez-tabu-fundacji-sexedpl-x-swps/",
+    image: newsImg13,
+    title:
+      "Projekt regulaminu rekrutacji i uczestnictwa w programie ambasadorskim „Lekcje bez tabu” Fundacji SEXEDPL x SWPS",
+    source: "sexed.pl",
+    date: "2026-10-12",
+  },
+  {
     href: "https://www.youtube.com/watch?v=IwHPjS8h1cg",
     image: newsImg11,
     title: "Edukacja zdrowotna w szkołach – czego obawiają się rodzice?",
     source: "Dzień Dobry TVN",
     date: "2026-09-17",
+  },
+  {
+    href: "https://sexed.pl/edukacja-zdrowotna-bedzie-obowiazkowa-ale-bez-komponentu-o-zdrowiu-seksualnym/",
+    image: newsImg14,
+    title:
+      "Edukacja zdrowotna będzie obowiązkowa, ale bez komponentu o zdrowiu seksualnym",
+    source: "sexed.pl",
+    date: "2026-04-09",
   },
   {
     href: "https://www.youtube.com/watch?v=jMljw1mwbIA",
@@ -80,6 +99,14 @@ const PROJECT_LIST: Project[] = [
     title: "Rozpoznawanie własnych granic i umiejętność ich egzekwowania",
     source: "YouTube",
     date: "2025-01-16",
+  },
+  {
+    href: "https://sexed.pl/seksualizacja-nastolatek-w-popkulturze/",
+    image: newsImg15,
+    title:
+      "Seksualizacja nastolatek w popkulturze. Od Britney Spears po Millie Bobby Brown",
+    source: "sexed.pl",
+    date: "2024-09-01",
   },
   {
     href: "https://www.vogue.pl/a/o-czym-rozmawiac-na-pierwszej-rance-by-poznac-druga-osobe-i-uniknac-krepujacej-ciszy",
